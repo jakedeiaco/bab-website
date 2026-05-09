@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Try a Free Class — Bay Area Boxing</title>
+  <meta name="description" content="Claim your free class at Bay Area Boxing in Belmont, CA. Boxing, Muay Thai, BJJ and more. No experience needed." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=2" />
+  <style>
+    .free-class-hero {
+      background: #0d0d0d;
+      padding: 120px 20px 60px;
+      text-align: center;
+    }
+    .free-class-hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      color: #fff;
+      letter-spacing: 0.04em;
+      margin-bottom: 12px;
+    }
+    .free-class-hero p {
+      color: #aaa;
+      font-size: 1.1rem;
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .red { color: #C0392B; }
+
+    .free-class-body {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    .free-class-form {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 40px;
+    }
+
+    .section-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem;
+      letter-spacing: 0.08em;
+      color: #C0392B;
+      margin: 32px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    .section-label:first-of-type { margin-top: 0; }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #bbb;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .form-group label .req { color: #C0392B; }
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="date"],
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 6px;
+      color: #fff;
+      padding: 11px 13px;
+      font-size: 0.95rem;
+      font-family: 'Inter', sans-serif;
+      transition: border-color 0.2s;
+      box-sizing: border-box;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #C0392B;
+    }
+    .form-group select option { background: #1a1a1a; }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .form-row-3 {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 520px) {
+      .form-row, .form-row-3 { grid-template-columns: 1fr; }
+      .free-class-form { padding: 24px 18px; }
+    }
+
+    /* Radio / checkbox groups */
+    .radio-group, .check-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    .radio-group label, .check-group label {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #ccc;
+      text-transform: none;
+      letter-spacing: 0;
+      cursor: pointer;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 6px;
+      padding: 8px 14px;
+      transition: border-color 0.2s, background 0.2s;
+      margin-bottom: 0;
+    }
+    .radio-group input, .check-group input { margin: 0; accent-color: #C0392B; }
+    .radio-group label:has(input:checked),
+    .check-group label:has(input:checked) {
+      border-color: #C0392B;
+      background: rgba(192,57,43,0.1);
+      color: #fff;
+    }
+
+    /* Waiver box */
+    .waiver-box {
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 20px;
+      max-height: 220px;
+      overflow-y: auto;
+      font-size: 0.82rem;
+      color: #888;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .waiver-box::-webkit-scrollbar { width: 6px; }
+    .waiver-box::-webkit-scrollbar-track { background: #1a1a1a; }
+    .waiver-box::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+    .waiver-agree {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(192,57,43,0.08);
+      border: 1px solid #C0392B;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+    .waiver-agree input { margin-top: 2px; accent-color: #C0392B; flex-shrink: 0; width: 16px; height: 16px; }
+    .waiver-agree span { font-size: 0.88rem; color: #ccc; line-height: 1.5; }
+
+    .esig-block {
+      margin-top: 4px;
+    }
+    .esig-block p {
+      font-size: 0.8rem;
+      color: #666;
+      margin-bottom: 8px;
+    }
+    .esig-input {
+      font-family: 'Georgia', serif !important;
+      font-size: 1.1rem !important;
+      font-style: italic;
+      color: #fff !important;
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: #C0392B;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 15px;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 8px;
+      transition: background 0.2s;
+    }
+    .btn-submit:hover { background: #a93226; }
+    .btn-submit:disabled { background: #444; cursor: not-allowed; }
+
+    .form-note {
+      text-align: center;
+      color: #555;
+      font-size: 0.8rem;
+      margin-top: 12px;
+    }
+
+    .error-msg {
+      background: rgba(192,57,43,0.12);
+      border: 1px solid #C0392B;
+      color: #e87060;
+      border-radius: 6px;
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      margin-bottom: 16px;
+      display: none;
+    }
+
+    .success-state {
+      text-align: center;
+      padding: 20px 0;
+      display: none;
+    }
+    .success-state .icon { font-size: 3rem; margin-bottom: 16px; }
+    .success-state h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 0.05em;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .success-state p { color: #aaa; line-height: 1.6; margin-bottom: 24px; }
+    .success-state a { color: #C0392B; text-decoration: none; font-weight: 600; }
+
+    .trust-strip {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .trust-strip span { color: #555; font-size: 0.85rem; }
+    .trust-strip span strong { color: #888; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="/" class="nav-logo">
+        <img src="img/logo.png" alt="Bay Area Boxing" />
+      </a>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/#schedule">Schedule</a></li>
+      <li><a href="/#programs">Programs</a></li>
+      <li><a href="/#pricing">Pricing</a></li>
+      <li><a href="/free-class.html">Free Class</a></li>
+    </ul>
+  </nav>
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <!-- HERO -->
+  <div class="free-class-hero">
+    <h1>Your First Class Is <span class="red">On Us</span></h1>
+    <p>No experience needed. No pressure. Fill out the form below and we'll reach out within 24 hours to set up your free class.</p>
+  </div>
+
+  <!-- FORM -->
+  <div class="free-class-body">
+    <div class="free-class-form">
+
+      <div class="error-msg" id="error-msg"></div>
+
+      <form id="free-class-form">
+
+        <!-- SECTION 1: Contact Info -->
+        <div class="section-label">Your Information</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first_name">First Name <span class="req">*</span></label>
+            <input type="text" id="first_name" name="first_name" placeholder="Jake" required />
+          </div>
+          <div class="form-group">
+            <label for="last_name">Last Name <span class="req">*</span></label>
+            <input type="text" id="last_name" name="last_name" placeholder="Smith" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone <span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(650) 555-0000" required />
+          </div>
+          <div class="form-group">
+            <label for="occupation">Occupation <span class="req">*</span></label>
+            <input type="text" id="occupation" name="occupation" placeholder="Engineer" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="street">Street Address <span class="req">*</span></label>
+          <input type="text" id="street" name="street" placeholder="123 Main St" required />
+        </div>
+
+        <div class="form-row-3">
+          <div class="form-group">
+            <label for="city">City <span class="req">*</span></label>
+            <input type="text" id="city" name="city" placeholder="Belmont" required />
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" placeholder="CA" maxlength="2" />
+          </div>
+          <div class="form-group">
+            <label for="zip">ZIP <span class="req">*</span></label>
+            <input type="text" id="zip" name="zip" placeholder="94002" required />
+          </div>
+        </div>
+
+        <!-- SECTION 2: Training Background -->
+        <div class="section-label">Training Background</div>
+
+        <div class="form-group">
+          <label>Have you trained in any of the following? <span style="color:#666;font-weight:400;text-transform:none;">(select all that apply)</span></label>
+          <div class="check-group" id="experience-group">
+            <label><input type="checkbox" name="prior_experience" value="Boxing" /> Boxing</label>
+            <label><input type="checkbox" name="prior_experience" value="Kickboxing" /> Kickboxing</label>
+            <label><input type="checkbox" name="prior_experience" value="Brazilian Jiu-Jitsu" /> Brazilian Jiu-Jitsu (BJJ)</label>
+            <label><input type="checkbox" name="prior_experience" value="MMA" /> MMA</label>
+            <label><input type="checkbox" name="prior_experience" value="None" /> None / New to combat sports</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>What results are you looking for? <span class="req">*</span> <span style="color:#666;font-weight:400;text-transform:none;">(select all that apply)</span></label>
+          <div class="check-group" id="goals-group">
+            <label><input type="checkbox" name="goals" value="Stamina" /> Stamina</label>
+            <label><input type="checkbox" name="goals" value="Strength" /> Strength</label>
+            <label><input type="checkbox" name="goals" value="Self Confidence" /> Self Confidence</label>
+            <label><input type="checkbox" name="goals" value="Weight Loss" /> Weight Loss</label>
+            <label><input type="checkbox" name="goals" value="Other" /> Other</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Interested in <span class="req">*</span> <span style="color:#666;font-weight:400;text-transform:none;">(select all that apply)</span></label>
+          <div class="check-group" id="interest-group">
+            <label><input type="checkbox" name="interest" value="Boxing" /> Boxing</label>
+            <label><input type="checkbox" name="interest" value="Muay Thai Kickboxing" /> Muay Thai</label>
+            <label><input type="checkbox" name="interest" value="Brazilian Jiu-Jitsu" /> BJJ</label>
+            <label><input type="checkbox" name="interest" value="Strength Training" /> Strength</label>
+            <label><input type="checkbox" name="interest" value="Kids Program" /> Kids</label>
+            <label><input type="checkbox" name="interest" value="Not sure yet" /> Not sure</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="time_since_shape">How long since you were in ideal shape? <span class="req">*</span></label>
+            <input type="text" id="time_since_shape" name="time_since_shape" placeholder="e.g. 2 years" required />
+          </div>
+          <div class="form-group">
+            <label for="time_thinking">How long have you been thinking about starting? <span class="req">*</span></label>
+            <input type="text" id="time_thinking" name="time_thinking" placeholder="e.g. 6 months" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Any physical or emotional conditions that could affect participation? <span class="req">*</span></label>
+          <div class="radio-group">
+            <label><input type="radio" name="conditions" value="Yes" required /> Yes</label>
+            <label><input type="radio" name="conditions" value="No" /> No</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>What has kept you from starting in the past?</label>
+          <div class="check-group">
+            <label><input type="checkbox" name="barriers" value="Time" /> Time</label>
+            <label><input type="checkbox" name="barriers" value="Money" /> Money</label>
+            <label><input type="checkbox" name="barriers" value="Facilities" /> Facilities</label>
+            <label><input type="checkbox" name="barriers" value="Procrastination" /> Procrastination</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Do you plan to stay in the area? <span class="req">*</span></label>
+          <div class="radio-group">
+            <label><input type="radio" name="staying_in_area" value="Yes" required /> Yes</label>
+            <label><input type="radio" name="staying_in_area" value="No" /> No</label>
+          </div>
+        </div>
+
+        <!-- SECTION 3: Liability Waiver -->
+        <div class="section-label">Liability Waiver</div>
+
+        <div class="waiver-box">
+          <strong style="color:#ccc;">GUEST ASSUMPTION AND RELEASE OF LIABILITY</strong><br><br>
+          Boxing and kickboxing courses offered by Bay Area Boxing of Belmont, CA and its owners, employees, instructors (collectively "Fitness Center") will involve sparring and physical contact with other individuals and/or heavy bags, which may result in personal injury. Other programs offered by the fitness center, including weight lifting, martial arts, aerobics, wrestling, cycling, and other events also present a risk of personal injury to the participant (yourself).<br><br>
+          By signing below, I am acknowledging my intent to release, waive, and discharge the Fitness Center from any claim or liability for injury to my person, my children, or other minor persons for whom I am responsible, hereafter occurring at or around the Fitness Center.<br><br>
+          Accordingly, I, for myself and my children, and for my or their successors, personal representatives, and assigns hereby (1) release and waive any claims and causes of action against the Fitness Center for personal injury, loss and/or consequential damage to me, my children, or other persons for whom I am responsible, resulting from future passive or active negligence of the Fitness Center in operation, management or supervision of the Fitness Center, and (2) agree to indemnify, defend and hold the Fitness Center free and harmless from any cost, loss or liability arising out of any injury to me, my children, or other persons for whom I am responsible in or around the Fitness Center proximity resulting from negligence of the Fitness Center.
+        </div>
+
+        <div class="waiver-agree">
+          <input type="checkbox" id="waiver_agree" name="waiver_agree" required />
+          <span>I have read and agree to the Guest Assumption and Release of Liability above. I understand that participation in boxing, kickboxing, and other fitness activities involves risk of injury.</span>
+        </div>
+
+        <div class="form-group">
+          <label>Your Signature <span class="req">*</span></label>
+          <p style="font-size:0.8rem;color:#666;margin-bottom:10px;">Draw your signature below. By signing you agree to the terms above.</p>
+          <canvas id="sig-canvas" width="520" height="120" style="background:#111;border:1px solid #333;border-radius:6px;cursor:crosshair;touch-action:none;width:100%;display:block;"></canvas>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+            <span style="font-size:0.75rem;color:#555;">Sign with mouse or finger</span>
+            <button type="button" id="clear-sig" style="background:none;border:1px solid #444;color:#888;border-radius:4px;padding:4px 12px;font-size:0.8rem;cursor:pointer;">Clear</button>
+          </div>
+          <input type="hidden" id="signature" name="signature" />
+        </div>
+
+        <div class="form-group">
+          <label for="signed_date">Date <span class="req">*</span></label>
+          <input type="text" id="signed_date" name="signed_date" readonly style="color:#888;cursor:default;" />
+        </div>
+
+        <button type="submit" class="btn-submit" id="submit-btn">Submit &amp; Claim My Free Class →</button>
+        <p class="form-note">We'll contact you within 24 hours to set up your free class.</p>
+
+      </form>
+
+      <!-- SUCCESS STATE -->
+      <div class="success-state" id="success-state">
+        <div class="icon">🥊</div>
+        <h3>You're All Set!</h3>
+        <p>Your free class request and waiver have been received. We'll reach out within 24 hours to schedule your first session. Check your email for a confirmation.</p>
+        <a href="/">← Back to Bay Area Boxing</a>
+      </div>
+
+    </div>
+
+    <div class="trust-strip">
+      <span>⭐ <strong>5.0</strong> · 131 Google Reviews</span>
+      <span>🏆 <strong>15 Years</strong> in Belmont</span>
+      <span>🥊 <strong>All levels</strong> welcome</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <a href="/" class="footer-logo">
+          <img src="img/logo.png" alt="Bay Area Boxing" />
+        </a>
+        <p class="footer-address">210 El Camino Real, Belmont, CA 94002</p>
+      </div>
+      <p class="footer-copy">&copy; 2025 Bay Area Boxing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Auto-fill today's date
+    const today = new Date().toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' });
+    document.getElementById('signed_date').value = today;
+
+    // ── Signature canvas ──────────────────────────────────────────
+    const canvas = document.getElementById('sig-canvas');
+    const ctx = canvas.getContext('2d');
+    let drawing = false;
+    let sigEmpty = true;
+
+    function resizeCanvas() {
+      const data = canvas.toDataURL();
+      canvas.width = canvas.offsetWidth;
+      canvas.height = 120;
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 2;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      const img = new Image();
+      img.src = data;
+      img.onload = () => ctx.drawImage(img, 0, 0);
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    function getPos(e) {
+      const r = canvas.getBoundingClientRect();
+      const src = e.touches ? e.touches[0] : e;
+      return { x: src.clientX - r.left, y: src.clientY - r.top };
+    }
+    function startDraw(e) { e.preventDefault(); drawing = true; const p = getPos(e); ctx.beginPath(); ctx.moveTo(p.x, p.y); }
+    function draw(e) { if (!drawing) return; e.preventDefault(); sigEmpty = false; const p = getPos(e); ctx.lineTo(p.x, p.y); ctx.stroke(); }
+    function stopDraw() { drawing = false; }
+
+    canvas.addEventListener('mousedown', startDraw);
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', stopDraw);
+    canvas.addEventListener('mouseleave', stopDraw);
+    canvas.addEventListener('touchstart', startDraw, { passive: false });
+    canvas.addEventListener('touchmove', draw, { passive: false });
+    canvas.addEventListener('touchend', stopDraw);
+
+    document.getElementById('clear-sig').addEventListener('click', () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      sigEmpty = true;
+      document.getElementById('signature').value = '';
+    });
+
+    // ── Form submit ───────────────────────────────────────────────
+    const form = document.getElementById('free-class-form');
+    const successState = document.getElementById('success-state');
+    const submitBtn = document.getElementById('submit-btn');
+    const errorMsg = document.getElementById('error-msg');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      errorMsg.style.display = 'none';
+
+      // Validate waiver checkbox
+      if (!form.waiver_agree.checked) {
+        errorMsg.textContent = 'Please read and agree to the liability waiver before submitting.';
+        errorMsg.style.display = 'block';
+        form.waiver_agree.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      // Validate signature
+      if (sigEmpty) {
+        errorMsg.textContent = 'Please sign the waiver before submitting.';
+        errorMsg.style.display = 'block';
+        canvas.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      // Validate at least one interest selected
+      const interests = [...form.querySelectorAll('input[name="interest"]:checked')].map(el => el.value);
+      if (interests.length === 0) {
+        errorMsg.textContent = 'Please select at least one program you\'re interested in.';
+        errorMsg.style.display = 'block';
+        return;
+      }
+
+      // Validate at least one goal selected
+      const goals = [...form.querySelectorAll('input[name="goals"]:checked')].map(el => el.value);
+      if (goals.length === 0) {
+        errorMsg.textContent = 'Please select at least one goal.';
+        errorMsg.style.display = 'block';
+        return;
+      }
+
+      // Save signature as data URL into hidden input
+      document.getElementById('signature').value = canvas.toDataURL('image/png');
+
+      // Collect multi-select fields
+      const barriers = [...form.querySelectorAll('input[name="barriers"]:checked')].map(el => el.value);
+      const experience = [...form.querySelectorAll('input[name="prior_experience"]:checked')].map(el => el.value);
+
+      const data = {
+        first_name: form.first_name.value.trim(),
+        last_name: form.last_name.value.trim(),
+        email: form.email.value.trim(),
+        phone: form.phone.value.trim(),
+        occupation: form.occupation.value.trim(),
+        street: form.street.value.trim(),
+        city: form.city.value.trim(),
+        state: form.state.value.trim(),
+        zip: form.zip.value.trim(),
+        prior_experience: experience.join(', ') || 'None',
+        goals: goals.join(', '),
+        interest: interests.join(', '),
+        time_since_shape: form.time_since_shape.value.trim(),
+        time_thinking: form.time_thinking.value.trim(),
+        conditions: form.conditions.value,
+        barriers: barriers.join(', ') || 'None selected',
+        staying_in_area: form.staying_in_area.value,
+        waiver_agreed: true,
+        signature: document.getElementById('signature').value,
+        signed_date: form.signed_date.value,
+        signed_ip_ts: new Date().toISOString()
+      };
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting…';
+
+      try {
+        const res = await fetch('https://bab-scheduler-production-b000.up.railway.app/api/free-class-lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+
+        if (res.ok && result.success) {
+          form.style.display = 'none';
+          successState.style.display = 'block';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          throw new Error(result.error || 'Something went wrong. Please try again.');
+        }
+      } catch (err) {
+        errorMsg.textContent = err.message;
+        errorMsg.style.display = 'block';
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit & Claim My Free Class →';
+        errorMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+    // ── Hamburger nav
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    const navBackdrop = document.getElementById('nav-backdrop');
+    function closeNav() {
+      navLinks.classList.remove('open');
+      navBackdrop.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', false);
+    }
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navBackdrop.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.classList.toggle('active', isOpen);
+    });
+    navBackdrop.addEventListener('click', closeNav);
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', closeNav));
+  </script>
+
+</body>
+</html>

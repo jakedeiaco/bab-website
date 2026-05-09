@@ -1,0 +1,2505 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-09T14:30:14.072Z",
+  "entries": {
+    "memory:memory/2026-04-02.md:32:46": {
+      "key": "memory:memory/2026-04-02.md:32:46",
+      "path": "memory/2026-04-02.md",
+      "startLine": 32,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "- ✅ schedule.bayareaboxing.net — 0.13s (healthy) - ✅ www.bayareaboxing.net — 3.0s (normal) **WhatsApp Status:** - Server-side flapping returned at 2:08 PM (499 errors every ~60s) - **Action:** Disabled channel to restore gateway stability - Pattern identical to 2026-03-30 outage — provider-side issue - Awaiting support response for re-enablement --- ## Summary Mobile-first responsive work completed and deployed. Day nav pill alignment still needs tweaking per Jake's feedback. All production systems healthy. WhatsApp provider issue continues to be out-of-band; channel disabled to maintain system stability.",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7314922682047784,
+      "maxScore": 0.370322805543699,
+      "firstRecalledAt": "2026-04-08T22:04:20.506Z",
+      "lastRecalledAt": "2026-04-12T16:05:37.774Z",
+      "queryHashes": [
+        "4fcf853f5933",
+        "aeb7a22d3fc8"
+      ],
+      "recallDays": [
+        "2026-04-08",
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "gateway",
+        "schedule.bayareaboxing.net",
+        "0.13s",
+        "www.bayareaboxing.net",
+        "3.0s",
+        "server-side",
+        "provider-side",
+        "re-enablement"
+      ]
+    },
+    "memory:memory/2026-04-08.md:29:43": {
+      "key": "memory:memory/2026-04-08.md:29:43",
+      "path": "memory/2026-04-08.md",
+      "startLine": 29,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "1. **Mobile Day Nav Screenshot** — Get final screenshot of day pill rendering on mobile to unblock schedule UI refinements. This is a blocker for completion. **MEDIUM** 2. **Member Portal Adoption Review** — Check /admin.html → Members tab to see active usage and any UX feedback that's surfaced 3. **WhatsApp Support Check** — Follow up on provider-side flapping fix. If resolved, plan re-enable and re-link sequence 4. **Content Calendar** — Instagram/Facebook routine updates as scheduled **LOW** 5. Continue member onboarding refinements based on beta feedback --- ## Summary Stable operations. Main blocker: mobile screenshot feedback for schedule refinements. No critical issues.",
+      "recallCount": 7,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.131058575305479,
+      "maxScore": 0.46671201998955186,
+      "firstRecalledAt": "2026-04-08T22:04:23.844Z",
+      "lastRecalledAt": "2026-04-13T14:39:30.731Z",
+      "queryHashes": [
+        "11abd8e3f731",
+        "831f5dea0827",
+        "11b393e45034",
+        "1966b2f90595",
+        "bf7ee66755dd",
+        "7b6cd2358811",
+        "2477be85441f"
+      ],
+      "recallDays": [
+        "2026-04-08",
+        "2026-04-09",
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "provider-side",
+        "re-enable",
+        "re-link",
+        "instagram/facebook",
+        "mobile",
+        "day",
+        "nav"
+      ]
+    },
+    "memory:memory/2026-04-05.md:1:34": {
+      "key": "memory:memory/2026-04-05.md:1:34",
+      "path": "memory/2026-04-05.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-04-05 — Sunday ## 📋 Morning Briefing (7:30 AM) ### 1. CALENDAR No scheduled meetings or gym events visible for Sunday. Typically light admin day — check personal calendar if needed. ### 2. OPEN THREADS & WAITING ON **In Flight from Previous Days:** - Mobile schedule layout refinements deployed — day nav pills alignment still awaiting screenshot from Jake (requested Friday) - Member portal beta testing ongoing — monitor adoption via /admin.html → Members tab **Integrations Pending:** - Google Calendar API: not configured (blocks calendar visibility in briefings) - Booking Data API: returns HTML, not JSON (blocks revenue/booking metrics) - **WhatsApp:** Provider-side flapping disa",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.6404288094088832,
+      "maxScore": 0.43073020522556105,
+      "firstRecalledAt": "2026-04-08T22:04:23.844Z",
+      "lastRecalledAt": "2026-04-13T14:39:30.731Z",
+      "queryHashes": [
+        "11abd8e3f731",
+        "831f5dea0827",
+        "11b393e45034",
+        "2477be85441f"
+      ],
+      "recallDays": [
+        "2026-04-08",
+        "2026-04-09",
+        "2026-04-10",
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "revenue/booking",
+        "provider-side",
+        "sunday",
+        "morning",
+        "briefing",
+        "calendar",
+        "scheduled"
+      ]
+    },
+    "memory:memory/2026-04-05.md:30:62": {
+      "key": "memory:memory/2026-04-05.md:30:62",
+      "path": "memory/2026-04-05.md",
+      "startLine": 30,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "2. **Member Portal Adoption Check** — Review /admin.html → Members tab to see how many members are actively using the booking system and if UX feedback has surfaced. 3. **WhatsApp Support Check** — Follow up on OpenClaw support ticket regarding provider-side flapping fix. If resolved, plan re-enable and re-link sequence. **LOW (Backlog)** 4. Content calendar — Instagram/Facebook updates as scheduled --- ## Work Log **Morning (7:30 AM):** - Cron briefing generated — Sunday operations stable - Systems check: all green **Evening (11:45 PM):** - End-of-day consolidation - No major incidents or changes during day - Production systems remained stable throughout --- ## Summary Quiet Sunday",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.482511920948942,
+      "maxScore": 0.42863970291445125,
+      "firstRecalledAt": "2026-04-08T22:23:33.918Z",
+      "lastRecalledAt": "2026-04-13T14:39:30.731Z",
+      "queryHashes": [
+        "4a15f45d60b7",
+        "831f5dea0827",
+        "11b393e45034",
+        "bf7ee66755dd",
+        "7b6cd2358811",
+        "2477be85441f"
+      ],
+      "recallDays": [
+        "2026-04-08",
+        "2026-04-09",
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "provider-side",
+        "re-enable",
+        "re-link",
+        "instagram/facebook",
+        "end-of-day",
+        "member",
+        "portal"
+      ]
+    },
+    "memory:memory/2026-04-08.md:1:33": {
+      "key": "memory:memory/2026-04-08.md:1:33",
+      "path": "memory/2026-04-08.md",
+      "startLine": 1,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "# Daily Log — Wednesday, April 8th, 2026 ## 📋 Morning Briefing (7:30 AM) ### 1. CALENDAR No scheduled meetings or gym events visible for Wednesday. Check personal calendar if needed. ### 2. OPEN THREADS & WAITING ON **In Flight:** - Mobile schedule layout refinements deployed — day nav pill screenshot awaiting Jake's feedback (requested Friday, still pending) - Member portal beta testing ongoing — adoption metrics to be reviewed via /admin.html → Members tab - WhatsApp support ticket pending provider-side flapping fix; if resolved, plan re-enable and re-link sequence **Integrations Pending:** - Google Calendar API: not configured (blocks calendar visibility in briefings) - Booking Data",
+      "recallCount": 9,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.872239789328424,
+      "maxScore": 0.4715253877091754,
+      "firstRecalledAt": "2026-04-09T06:45:15.094Z",
+      "lastRecalledAt": "2026-04-19T14:30:10.232Z",
+      "queryHashes": [
+        "e55d66aafa5d",
+        "831f5dea0827",
+        "11b393e45034",
+        "1966b2f90595",
+        "bf7ee66755dd",
+        "7b6cd2358811",
+        "2477be85441f",
+        "40e0681614fe",
+        "6395435a5ac1"
+      ],
+      "recallDays": [
+        "2026-04-08",
+        "2026-04-09",
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "provider-side",
+        "re-enable",
+        "re-link",
+        "log",
+        "wednesday",
+        "april",
+        "8th"
+      ]
+    },
+    "memory:memory/2026-04-06.md:41:70": {
+      "key": "memory:memory/2026-04-06.md:41:70",
+      "path": "memory/2026-04-06.md",
+      "startLine": 41,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "- No incidents ## Preferences Learned - Jake prefers transparent pricing over \"contact us\" - Likes the Furia Fight Club modern, direct aesthetic - Values \"Try a Free Class\" hook over generic CTAs - Wants schedule embedded/accurate (not manual) - Fix-first approach appreciated (don't escalate, solve it) ## Next Steps (for Jake) 1. Review site at localhost:8090 2. Confirm final photo selections for program cards 3. Approve deployment to DreamHost 4. Update CNAME for bayareaboxing.net if moving off WordPress --- **Session notes:** Worked with Jake on website modernization, Ryler's scheduler improvements, and photography selection. No blockers, all systems operational. ## End-of-Day Summary",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3052818360561655,
+      "maxScore": 0.4580226412033743,
+      "firstRecalledAt": "2026-04-09T06:45:15.094Z",
+      "lastRecalledAt": "2026-04-12T14:39:02.156Z",
+      "queryHashes": [
+        "e55d66aafa5d",
+        "bf7ee66755dd",
+        "7b6cd2358811"
+      ],
+      "recallDays": [
+        "2026-04-08",
+        "2026-04-11",
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "embedded/accurate",
+        "fix-first",
+        "bayareaboxing.net",
+        "end-of-day",
+        "incidents",
+        "preferences",
+        "learned",
+        "jake"
+      ]
+    },
+    "memory:memory/2026-04-01.md:1:41": {
+      "key": "memory:memory/2026-04-01.md:1:41",
+      "path": "memory/2026-04-01.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# 2026-04-01 — Wednesday ## 📋 Morning Briefing (7:30 AM) ### 1. CALENDAR No upcoming events visible (Google Calendar API not configured). Recommend checking personal calendar directly. ### 2. OPEN THREADS & WAITING ON **Integrations Still Pending:** - **SMTP/Email:** Not configured — blocks automated class reminders and inbox checks - **Google Calendar API:** Not configured — cannot pull upcoming events into briefings - **Booking Data API:** Returns HTML, not JSON (blocks revenue/booking metrics in reports) - **WhatsApp:** Disabled since 2026-03-30 due to provider flapping; awaiting stability fix from OpenClaw support **In Flight from Yesterday:** - Member portal beta testing underway",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.1763823386952124,
+      "maxScore": 0.4012516578679639,
+      "firstRecalledAt": "2026-04-09T14:30:10.399Z",
+      "lastRecalledAt": "2026-04-12T14:39:02.156Z",
+      "queryHashes": [
+        "831f5dea0827",
+        "11b393e45034",
+        "7b6cd2358811"
+      ],
+      "recallDays": [
+        "2026-04-09",
+        "2026-04-10",
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "smtp/email",
+        "revenue/booking",
+        "wednesday",
+        "morning",
+        "briefing",
+        "calendar",
+        "upcoming",
+        "events"
+      ]
+    },
+    "memory:memory/2026-04-04.md:32:60": {
+      "key": "memory:memory/2026-04-04.md:32:60",
+      "path": "memory/2026-04-04.md",
+      "startLine": 32,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "**MEDIUM** 2. **Member Portal Engagement Check** — Review /admin.html → Members tab. See how many members are actively using the booking system and if any UX feedback has surfaced. 3. **Monitor WhatsApp Status** — Check for support response on the provider-side flapping. If fixed, we can re-enable and re-link the channel. **LOW (Backlog)** 4. Instagram/Facebook content calendar — ongoing routine --- ## Work Log _Cron briefing generated and sent to WhatsApp early morning. Both production systems confirmed healthy. No critical incidents overnight._ ### Evening (11:45 PM) - End-of-day memory consolidation cron ran - No additional work or incidents recorded after morning briefing - Systems",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.1877896499132534,
+      "maxScore": 0.40463031766497154,
+      "firstRecalledAt": "2026-04-10T14:30:10.342Z",
+      "lastRecalledAt": "2026-04-13T14:39:30.731Z",
+      "queryHashes": [
+        "11b393e45034",
+        "7b6cd2358811",
+        "2477be85441f"
+      ],
+      "recallDays": [
+        "2026-04-10",
+        "2026-04-12",
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "provider-side",
+        "re-enable",
+        "re-link",
+        "instagram/facebook",
+        "end-of-day",
+        "medium",
+        "member"
+      ]
+    },
+    "memory:memory/2026-04-02.md:1:44": {
+      "key": "memory:memory/2026-04-02.md:1:44",
+      "path": "memory/2026-04-02.md",
+      "startLine": 1,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "# 2026-04-02 — Thursday ## Work Session: Mobile Schedule Layout **Completed:** - Raised mobile breakpoint from 600px → 768px in both CSS and JS - Hidden calendar grid on mobile, mobile agenda now visible on all phones/tablets ≤768px - Fixed day nav sticky positioning and full-width constraints - Hidden stats bar on mobile to clean up layout - Corrected sticky top offset to 85px (52px header + 33px tabs) - Apple/Outlook calendar export (ICS format) added to booking confirmation **Deployed:** 4 commits to bab-scheduler, all live on Railway - schedule.bayareaboxing.net now renders vertical day-pill + agenda layout on mobile - Member portal UX responsive at all screen sizes **Outstanding:**",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.1237804365843866,
+      "maxScore": 0.3961576767309524,
+      "firstRecalledAt": "2026-04-10T14:30:10.433Z",
+      "lastRecalledAt": "2026-04-12T16:05:37.774Z",
+      "queryHashes": [
+        "1966b2f90595",
+        "7b6cd2358811",
+        "aeb7a22d3fc8"
+      ],
+      "recallDays": [
+        "2026-04-10",
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "phones/tablets",
+        "full-width",
+        "apple/outlook",
+        "bab-scheduler",
+        "schedule.bayareaboxing.net",
+        "day-pill",
+        "thursday",
+        "mobile"
+      ]
+    },
+    "memory:memory/2026-04-03.md:1:34": {
+      "key": "memory:memory/2026-04-03.md:1:34",
+      "path": "memory/2026-04-03.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-04-03 — Friday ## 📋 Morning Briefing (7:30 AM) ### 1. CALENDAR No scheduled meetings visible for today. Check your personal calendar if needed. ### 2. OPEN THREADS & WAITING ON **In Flight from Yesterday:** - Mobile schedule layout refinements deployed — day nav pills still need fine-tuning per your 1:21 PM feedback on Thursday (need screenshot to finalize alignment) **Integrations Pending:** - Google Calendar API: not configured (blocks calendar visibility in briefings) - Booking Data API: returns HTML, not JSON (blocks revenue/booking metrics) - **WhatsApp:** Provider-side flapping continues; channel disabled as of Thursday 2:08 PM to maintain system stability. Awaiting suppor",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8163346392187867,
+      "maxScore": 0.42174317706341946,
+      "firstRecalledAt": "2026-04-10T14:30:10.433Z",
+      "lastRecalledAt": "2026-04-12T14:39:02.156Z",
+      "queryHashes": [
+        "1966b2f90595",
+        "7b6cd2358811"
+      ],
+      "recallDays": [
+        "2026-04-10",
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "fine-tuning",
+        "revenue/booking",
+        "provider-side",
+        "friday",
+        "morning",
+        "briefing",
+        "calendar",
+        "scheduled"
+      ]
+    },
+    "memory:memory/2026-04-06.md:18:50": {
+      "key": "memory:memory/2026-04-06.md:18:50",
+      "path": "memory/2026-04-06.md",
+      "startLine": 18,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "5. **Pricing** — 5 membership cards: Unlimited ($199), 12 Classes ($179), 8 Classes ($159), 4 Classes ($139), Drop-In; $99 lifetime enrollment fee shown above cards; Gold card marked \"Most Popular\" 6. **Testimonials** — 6 real Google reviews in 3-col grid (responsive to 1-col mobile) 7. **Contact** — two-column layout: contact info + form fields (Name, Email, Phone, Message) 8. **Footer** — logo, address, social links **Photo selection:** Chose bab-4.jpg as hero (landscape Muay Thai kick action, repositioned to `top` to avoid head crop) **Key decisions:** - Pricing is NOW LIVE — no more \"contact for rates\" - CTA buttons link to free class form on old site (liability workflow already there)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.421221755170157,
+      "maxScore": 0.421221755170157,
+      "firstRecalledAt": "2026-04-11T14:30:08.169Z",
+      "lastRecalledAt": "2026-04-11T14:30:08.169Z",
+      "queryHashes": [
+        "bf7ee66755dd"
+      ],
+      "recallDays": [
+        "2026-04-11"
+      ],
+      "conceptTags": [
+        "drop-in",
+        "3-col",
+        "1-col",
+        "two-column",
+        "bab-4.jpg",
+        "pricing",
+        "membership",
+        "cards"
+      ]
+    },
+    "memory:memory/2026-04-01.md:33:74": {
+      "key": "memory:memory/2026-04-01.md:33:74",
+      "path": "memory/2026-04-01.md",
+      "startLine": 33,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "2. **Monitor WhatsApp Recovery** — 0 min (just watch for support response) - Check if OpenClaw support has fixed provider-side flapping - Can re-enable channel once confirmed stable **MEDIUM** 3. **Member Portal Feedback** — Assess how many members are using the booking system - Review /admin.html → Members tab for engagement metrics - Adjust onboarding/UX if needed 4. **Booking API Access** — Determine if we can pull JSON data directly - Will unblock revenue reports and advanced member analytics - Effort: investigate if DreamHost DB query is possible **LOW (Backlog)** 5. Social/content routine — Instagram, Facebook updates as scheduled --- ## 📝 End-of-Day Log (11:45",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7898795213983498,
+      "maxScore": 0.40593584314822545,
+      "firstRecalledAt": "2026-04-11T14:30:08.169Z",
+      "lastRecalledAt": "2026-04-12T14:39:02.156Z",
+      "queryHashes": [
+        "bf7ee66755dd",
+        "7b6cd2358811"
+      ],
+      "recallDays": [
+        "2026-04-11",
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "provider-side",
+        "re-enable",
+        "admin.html",
+        "onboarding/ux",
+        "social/content",
+        "end-of-day",
+        "monitor",
+        "whatsapp"
+      ]
+    },
+    "memory:memory/2026-04-12.md:36:75": {
+      "key": "memory:memory/2026-04-12.md:36:75",
+      "path": "memory/2026-04-12.md",
+      "startLine": 36,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "- Hobby plan: $5/mo, unlimited apps - Impact: restores member booking immediately **2. Redeploy Scheduler (2 min)** - Once upgrade is live: `cd projects/bab-scheduler && railway up` - Verify schedule.bayareaboxing.net returns 200 - Impact: full service restoration **3. Member Portal Adoption Check (5 min)** - Review /admin.html → Members tab once scheduler is live - Assess active usage, gather feedback - Impact: informs next UX iteration **4. Routine Content Calendar** - Instagram/Facebook posts as scheduled - Impact: ongoing visibility --- ## 📝 End-of-Day Log (11:55 PM) ### Actions Taken - Morning briefing created and reviewed - Railway upgrade status: *",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.2308379154162985,
+      "maxScore": 0.45167153405992183,
+      "firstRecalledAt": "2026-04-14T14:30:08.991Z",
+      "lastRecalledAt": "2026-04-22T14:30:11.407Z",
+      "queryHashes": [
+        "f71b5445cb1a",
+        "40e0681614fe",
+        "6c2d36a08f7d"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-17",
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "5/mo",
+        "projects/bab-scheduler",
+        "schedule.bayareaboxing.net",
+        "admin.html",
+        "instagram/facebook",
+        "end-of-day",
+        "hobby",
+        "plan"
+      ]
+    },
+    "memory:memory/2026-04-13.md:30:54": {
+      "key": "memory:memory/2026-04-13.md:30:54",
+      "path": "memory/2026-04-13.md",
+      "startLine": 30,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "- Booking data API returns HTML not JSON (blocks revenue/bookings heartbeat check) - Google Calendar API not configured (blocks calendar heartbeat check) - Support SLA inbox scanning not configured - Website deployment to DreamHost still pending Jake's approval of localhost:8090 --- ## Schedule Page Debug Session (afternoon, April 13) ### Root cause of all mobile issues 1. **PWA service worker** cached old `/api/schedule` error response (`{ error: 'Login required' }`). Persisted through cache clears. Required explicit SW unregister. 2. **Root URL redirect** was `/member.html` — everyone got sent to login instead of schedule 3. **Two competing agenda containers** (`#view-agenda` vs `#mobil",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.835339359057983,
+      "maxScore": 0.4549617769376559,
+      "firstRecalledAt": "2026-04-14T14:30:08.991Z",
+      "lastRecalledAt": "2026-04-22T14:30:11.407Z",
+      "queryHashes": [
+        "f71b5445cb1a",
+        "6c2d36a08f7d"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "revenue/bookings",
+        "api/schedule",
+        "member.html",
+        "view-agenda",
+        "booking",
+        "data",
+        "api",
+        "returns"
+      ]
+    },
+    "memory:memory/2026-04-12.md:1:44": {
+      "key": "memory:memory/2026-04-12.md:1:44",
+      "path": "memory/2026-04-12.md",
+      "startLine": 1,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "# 2026-04-12 — Sunday ## 📋 Morning Briefing (7:38 AM) ### 1. CALENDAR No scheduled meetings or gym events visible. Check personal calendar if needed. ### 2. OPEN THREADS & WAITING ON **🚨 CRITICAL — BLOCKING MEMBERS** - **Railway trial expired (Sat 4/11 8:53 AM)** - schedule.bayareaboxing.net returning 302 (app down) - Root cause: Trial ended, app needs paid plan - **Action required:** Upgrade to Hobby plan ($5/mo) at railway.app → Billing → add card - Redeploy takes <2 minutes once done - Members cannot book while this is down - All code + DB intact on GitHub and Railway volume **In Flight:** - Mobile schedule layout refinements deployed and working (awaiting adoption metr",
+      "recallCount": 7,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.8783826498011034,
+      "maxScore": 0.4502265480032899,
+      "firstRecalledAt": "2026-04-14T14:30:08.991Z",
+      "lastRecalledAt": "2026-04-22T14:30:11.407Z",
+      "queryHashes": [
+        "f71b5445cb1a",
+        "7c7975d9a7bd",
+        "40e0681614fe",
+        "c2a2d238bec8",
+        "6395435a5ac1",
+        "4ab1b0b63da1",
+        "6c2d36a08f7d"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-15",
+        "2026-04-17",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "4/11",
+        "schedule.bayareaboxing.net",
+        "5/mo",
+        "railway.app",
+        "sunday",
+        "morning",
+        "briefing",
+        "calendar"
+      ]
+    },
+    "memory:memory/2026-04-09.md:54:68": {
+      "key": "memory:memory/2026-04-09.md:54:68",
+      "path": "memory/2026-04-09.md",
+      "startLine": 54,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "**Status: Running in cron isolation — full session history not visible to this task.** Based on morning priorities and open threads: - Website redesign at localhost:8090 was ready for review - Scheduler bugs were fixed and verified - Pending feedback from Jake on design/pricing/mobile screenshot **Next Actions for Tomorrow:** - Check if Jake reviewed website and approved for DreamHost deployment - Verify mobile screenshot feedback was sent - Review free class lead capture metrics (emails should be flowing to Jake's account) - Update this entry with actual work completed once session history is available **Note:** This cron ran at end of day but couldn't access full session history. Jake c",
+      "recallCount": 7,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.797520896307093,
+      "maxScore": 0.435625753271211,
+      "firstRecalledAt": "2026-04-14T14:30:08.991Z",
+      "lastRecalledAt": "2026-04-22T14:30:11.407Z",
+      "queryHashes": [
+        "f71b5445cb1a",
+        "7c7975d9a7bd",
+        "f090f11d85e8",
+        "40e0681614fe",
+        "c2a2d238bec8",
+        "4ab1b0b63da1",
+        "6c2d36a08f7d"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-15",
+        "2026-04-16",
+        "2026-04-17",
+        "2026-04-18",
+        "2026-04-20",
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "design/pricing/mobile",
+        "status",
+        "running",
+        "cron",
+        "isolation",
+        "full",
+        "history",
+        "not"
+      ]
+    },
+    "memory:memory/2026-04-10.md:18:49": {
+      "key": "memory:memory/2026-04-10.md:18:49",
+      "path": "memory/2026-04-10.md",
+      "startLine": 18,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "- Booking Data API: returns HTML, not JSON (blocks revenue/booking metrics) ### 3. PRODUCTION HEALTH ✅ - ✅ schedule.bayareaboxing.net → 302 (redirect working, endpoint responds 200) - ✅ bayareaboxing.net → 301 (redirect working, endpoint responds 200) - All systems operational, no incidents ### 4. PROPOSED PRIORITIES (Ranked by Impact) **🔴 HIGH — CRITICAL PATH BLOCKERS** 1. **Review website redesign at http://localhost:8090** — Provide final approval on design, pricing section, free class form, CTAs, and hours. This is a 4-day blocker for public launch. Once approved, deploy to DreamHost. 2. **Send mobile screenshot feedback** — Day nav pill rendering on mobile. 5-day blocker. 30 seconds",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.389732442615055,
+      "maxScore": 0.43821788849313115,
+      "firstRecalledAt": "2026-04-14T14:30:08.991Z",
+      "lastRecalledAt": "2026-04-22T14:30:11.407Z",
+      "queryHashes": [
+        "f71b5445cb1a",
+        "7c7975d9a7bd",
+        "f090f11d85e8",
+        "40e0681614fe",
+        "4ab1b0b63da1",
+        "6c2d36a08f7d"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-15",
+        "2026-04-16",
+        "2026-04-17",
+        "2026-04-20",
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "revenue/booking",
+        "schedule.bayareaboxing.net",
+        "bayareaboxing.net",
+        "4-day",
+        "5-day",
+        "booking",
+        "data",
+        "api"
+      ]
+    },
+    "memory:memory/2026-04-10.md:1:27": {
+      "key": "memory:memory/2026-04-10.md:1:27",
+      "path": "memory/2026-04-10.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "# Daily Log — Friday, April 10th, 2026 ## 📋 Morning Briefing (7:30 AM) ### 1. CALENDAR No scheduled meetings or gym events visible for Friday. Check personal calendar if needed. ### 2. OPEN THREADS & WAITING ON **In Flight from Yesterday:** - **Website redesign feedback** — Full free class + waiver flow, public schedule, unified CTAs, pricing updates built and live at http://localhost:8090. Awaiting Jake's feedback on design, copy, pricing section, and lead capture form before DreamHost deployment. **4-day blocker.** - **Mobile schedule screenshot feedback** — Still pending (originally requested Friday 2026-04-05). **5-day blocker** for final schedule UI refinements. - **Member portal a",
+      "recallCount": 7,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.747726582266359,
+      "maxScore": 0.43765647466939833,
+      "firstRecalledAt": "2026-04-14T14:30:08.991Z",
+      "lastRecalledAt": "2026-04-22T14:30:11.407Z",
+      "queryHashes": [
+        "f71b5445cb1a",
+        "f090f11d85e8",
+        "40e0681614fe",
+        "c2a2d238bec8",
+        "6395435a5ac1",
+        "4ab1b0b63da1",
+        "6c2d36a08f7d"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-16",
+        "2026-04-17",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "4-day",
+        "5-day",
+        "log",
+        "friday",
+        "april",
+        "10th",
+        "morning",
+        "briefing"
+      ]
+    },
+    "memory:memory/2026-04-10.md:42:70": {
+      "key": "memory:memory/2026-04-10.md:42:70",
+      "path": "memory/2026-04-10.md",
+      "startLine": 42,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "- Website redesign is **ready for production**. Only needs Jake's final design/copy approval. - Both 4-day and 5-day blockers are high-impact and quick wins. Clearing these unblocks public launch and schedule completion. - All production systems healthy; no infrastructure work needed. --- ## 📊 End-of-Day Checkpoint (11:45 PM) **Status:** No session history visible in isolated cron context. Logging checkpoint. Key blockers from morning briefing remain open: - Website redesign review (localhost:8090) — awaiting Jake feedback - Mobile screenshot feedback — awaiting Jake approval - Free class lead capture verification — check email - Member portal adoption metrics — check /admin.html No ne",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.3801933120718664,
+      "maxScore": 0.4372403472107141,
+      "firstRecalledAt": "2026-04-14T14:30:08.991Z",
+      "lastRecalledAt": "2026-04-22T14:30:11.407Z",
+      "queryHashes": [
+        "f71b5445cb1a",
+        "f090f11d85e8",
+        "40e0681614fe",
+        "c2a2d238bec8",
+        "4ab1b0b63da1",
+        "6c2d36a08f7d"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-16",
+        "2026-04-17",
+        "2026-04-18",
+        "2026-04-20",
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "design/copy",
+        "4-day",
+        "5-day",
+        "high-impact",
+        "end-of-day",
+        "admin.html",
+        "website",
+        "redesign"
+      ]
+    },
+    "memory:memory/2026-04-09.md:25:62": {
+      "key": "memory:memory/2026-04-09.md:25:62",
+      "path": "memory/2026-04-09.md",
+      "startLine": 25,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "### 4. PROPOSED PRIORITIES (Ranked by Impact) **HIGH** 1. **Review website at http://localhost:8090** — Provide feedback on design, free class form, pricing section, CTAs, hours. This unblocks DreamHost deployment. 2. **Mobile screenshot feedback** — Send final screenshot of day nav pill rendering on mobile. Unblocks schedule UI completion. **MEDIUM** 3. **Monitor free class leads** — Check if new waiver flow is capturing leads properly (Jake's email should receive submissions) 4. **Member portal adoption check** — Review /admin.html → Members tab for beta usage metrics **LOW** 5. **Content calendar** — Instagram/Facebook routine updates as scheduled 6. **Telegram bot testing** — Verify m",
+      "recallCount": 7,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.735798893396832,
+      "maxScore": 0.42884102417709846,
+      "firstRecalledAt": "2026-04-14T14:30:08.991Z",
+      "lastRecalledAt": "2026-04-22T14:30:11.407Z",
+      "queryHashes": [
+        "f71b5445cb1a",
+        "7c7975d9a7bd",
+        "f090f11d85e8",
+        "40e0681614fe",
+        "c2a2d238bec8",
+        "6395435a5ac1",
+        "6c2d36a08f7d"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-15",
+        "2026-04-16",
+        "2026-04-17",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "instagram/facebook",
+        "proposed",
+        "priorities",
+        "ranked",
+        "impact",
+        "high",
+        "review"
+      ]
+    },
+    "memory:memory/2026-04-08.md:29:55": {
+      "key": "memory:memory/2026-04-08.md:29:55",
+      "path": "memory/2026-04-08.md",
+      "startLine": 29,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "1. **Mobile Day Nav Screenshot** — Get final screenshot of day pill rendering on mobile to unblock schedule UI refinements. This is a blocker for completion. **MEDIUM** 2. **Member Portal Adoption Review** — Check /admin.html → Members tab to see active usage and any UX feedback that's surfaced 3. **WhatsApp Support Check** — Follow up on provider-side flapping fix. If resolved, plan re-enable and re-link sequence 4. **Content Calendar** — Instagram/Facebook routine updates as scheduled **LOW** 5. Continue member onboarding refinements based on beta feedback --- ## Afternoon/Evening Work Log (3pm–7pm) ### OpenClaw - Updated OpenClaw 2026.3.24 → 2026.4.8 - Configured Telegram (@BABVinBot",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4165663188463313,
+      "maxScore": 0.4165663188463313,
+      "firstRecalledAt": "2026-04-14T14:30:08.991Z",
+      "lastRecalledAt": "2026-04-14T14:30:08.991Z",
+      "queryHashes": [
+        "f71b5445cb1a"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "provider-side",
+        "re-enable",
+        "re-link",
+        "instagram/facebook",
+        "afternoon/evening",
+        "2026.3.24",
+        "2026.4.8"
+      ]
+    },
+    "memory:memory/2026-04-09.md:1:30": {
+      "key": "memory:memory/2026-04-09.md:1:30",
+      "path": "memory/2026-04-09.md",
+      "startLine": 1,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "# Daily Log — Thursday, April 9th, 2026 ## 📋 Morning Briefing (7:30 AM) ### 1. CALENDAR No scheduled meetings or gym events visible for Thursday. Check personal calendar if needed. ### 2. OPEN THREADS & WAITING ON **In Flight from Yesterday:** - **Website redesign ready for review** — Full free class + waiver flow, public schedule, unified CTAs, pricing updates all built and live at http://localhost:8090. Awaiting Jake's feedback on design, copy, pricing section, and lead capture form before DreamHost deployment. - **Mobile schedule screenshot feedback** — Still pending from Friday (originally requested 2026-04-05). Blocker for final schedule UI refinements. - **Member portal adoption m",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7725755941170813,
+      "maxScore": 0.4168138181797262,
+      "firstRecalledAt": "2026-04-15T14:30:09.513Z",
+      "lastRecalledAt": "2026-04-22T14:30:11.407Z",
+      "queryHashes": [
+        "7c7975d9a7bd",
+        "6c2d36a08f7d"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "log",
+        "thursday",
+        "april",
+        "9th",
+        "morning",
+        "briefing",
+        "calendar",
+        "scheduled"
+      ]
+    },
+    "memory:memory/2026-04-08.md:67:92": {
+      "key": "memory:memory/2026-04-08.md:67:92",
+      "path": "memory/2026-04-08.md",
+      "startLine": 67,
+      "endLine": 92,
+      "source": "memory",
+      "snippet": "- Website at http://localhost:8090 — ready for Jake review, not yet deployed to DreamHost - Scheduler live at https://schedule.bayareaboxing.net - All production systems healthy throughout day --- ## Evening Status (11:45 PM) All planned work complete for the day. Website and scheduler ready for Jake's review tomorrow morning. ### Ready for Action - Website (http://localhost:8090) has all new pages and CTAs live — awaiting Jake review before DreamHost deploy - Scheduler bugs fixed and verified in production - Telegram bot configured and operational ### Tomorrow's Priorities 1. **Get Jake's feedback** on website changes (design, CTAs, pricing section, free class form) 2. **Deploy to Drea",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3702970772169738,
+      "maxScore": 0.3702970772169738,
+      "firstRecalledAt": "2026-04-17T14:30:08.586Z",
+      "lastRecalledAt": "2026-04-17T14:30:08.586Z",
+      "queryHashes": [
+        "40e0681614fe"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "schedule.bayareaboxing.net",
+        "website",
+        "http",
+        "localhost",
+        "ready",
+        "jake",
+        "review",
+        "not"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:39": {
+      "key": "memory:memory/2026-04-13.md:1:39",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "# Memory — Monday, April 13th, 2026 ## Production Health Summary ### Saturday April 11 (active window 8am–4:49pm PT) - **8:02 AM:** schedule.bayareaboxing.net returned 404 \"Application not found\" — Railway outage - **8:32 AM:** Still 404 — issue ongoing - **9:33 AM:** RECOVERED — scheduler back online (302). Outage duration ~1.5 hours (8:02–9:33 AM) - **10:03 AM–4:17 PM:** All checks green (302/200) - **4:49 PM onward:** Quiet hours began ### Sunday April 12 (active window 8:29am–10:48pm PT) - All production checks passed — schedule 302, website 200 - No incidents - Quiet hours began 11:01 PM ### Monday April 13 (active window from 8am) - 8:12 AM, 8:56 AM, 9:41 AM, 10:13 AM, 10:58 AM, 11",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3923169534235999,
+      "maxScore": 0.3923169534235999,
+      "firstRecalledAt": "2026-04-19T14:30:10.232Z",
+      "lastRecalledAt": "2026-04-19T14:30:10.232Z",
+      "queryHashes": [
+        "6395435a5ac1"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "schedule.bayareaboxing.net",
+        "1.5",
+        "302/200",
+        "monday",
+        "april",
+        "13th",
+        "production",
+        "health"
+      ]
+    },
+    "memory:memory/2026-04-21.md:30:71": {
+      "key": "memory:memory/2026-04-21.md:30:71",
+      "path": "memory/2026-04-21.md",
+      "startLine": 30,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "4. **Member portal adoption check (5 min)** — Review /admin.html → Members tab stats. --- ## Notes All critical blockers are approval-gated on your side. Website is the quickest high-leverage win (15 min → live). Production is clean. Ready when you are. # Daily Log — Tuesday, April 21st, 2026 ## 📋 Morning Briefing (7:30 AM PT) ### 1. CALENDAR No scheduled meetings visible. Standard gym operations day. ### 2. OPEN THREADS & WAITING ON **🔴 CRITICAL BLOCKERS** - **Website redesign approval (8 days old)** — Fully built, ready to deploy to DreamHost. Blocked on final sign-off. Highest-leverage next step. - **Reminder test verification (5 days old)** — You booked two classes after cutoff",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9101463899773286,
+      "maxScore": 0.45801291334511185,
+      "firstRecalledAt": "2026-04-23T14:30:09.406Z",
+      "lastRecalledAt": "2026-04-24T14:30:10.295Z",
+      "queryHashes": [
+        "7f03e4649da2",
+        "7984f719222a"
+      ],
+      "recallDays": [
+        "2026-04-23",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "approval-gated",
+        "high-leverage",
+        "sign-off",
+        "highest-leverage",
+        "member",
+        "portal",
+        "adoption"
+      ]
+    },
+    "memory:memory/2026-04-19.md:54:69": {
+      "key": "memory:memory/2026-04-19.md:54:69",
+      "path": "memory/2026-04-19.md",
+      "startLine": 54,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "- **Reminder test verification** — PENDING. Need confirmation that Tue 4/15 reminders were received in correct timezone. - **Mobile screenshot feedback** — PENDING. Final UI polish needed. ### Work Completed - Morning briefing & context loaded - Systems health check: all green ✅ - Monitored for new blockers — none emerged - Scheduled tasks running normally ### Notes for Tomorrow - Follow up on website approval (7-day blocker — high priority) - Verify reminder test completion (unblocks feature for all members) - If no movement on blockers by EOD, escalate next weekend",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.7586253862942685,
+      "maxScore": 0.4522426613663696,
+      "firstRecalledAt": "2026-04-23T14:30:09.406Z",
+      "lastRecalledAt": "2026-04-27T14:30:13.286Z",
+      "queryHashes": [
+        "7f03e4649da2",
+        "7984f719222a",
+        "8961f2e135c5",
+        "6ceef9be7fe8"
+      ],
+      "recallDays": [
+        "2026-04-23",
+        "2026-04-24",
+        "2026-04-25",
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "4/15",
+        "7-day",
+        "reminder",
+        "test",
+        "verification",
+        "pending",
+        "need",
+        "confirmation"
+      ]
+    },
+    "memory:memory/2026-04-20.md:21:59": {
+      "key": "memory:memory/2026-04-20.md:21:59",
+      "path": "memory/2026-04-20.md",
+      "startLine": 21,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "- Member portal adoption metrics review pending ### 3. PRODUCTION HEALTH ✅ - ✅ **bayareaboxing.net** → 200 OK (responsive, serving normally) - ✅ **schedule.bayareaboxing.net** → 200 OK (responsive, fast) - No incidents overnight. All systems operational. ### 4. PROPOSED PRIORITIES (Ranked by Impact) **🔴 TIER 1 — CRITICAL PATH (High Impact, Quick Wins)** 1. **Verify reminder test completion (2 min)** — Confirm if Tue 4/15 7:30–7:45 PM reminders arrived in correct timezone. This unblocks class reminders for all members. 2. **Website redesign approval (10–15 min)** — Review http://localhost:8090. Feedback on design, pricing, copy, free class form, CTAs. Approval unblocks public launch (8",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3392739928212816,
+      "maxScore": 0.45143017595299906,
+      "firstRecalledAt": "2026-04-23T14:30:09.406Z",
+      "lastRecalledAt": "2026-04-25T14:30:08.208Z",
+      "queryHashes": [
+        "7f03e4649da2",
+        "7984f719222a",
+        "8961f2e135c5"
+      ],
+      "recallDays": [
+        "2026-04-23",
+        "2026-04-24",
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "bayareaboxing.net",
+        "schedule.bayareaboxing.net",
+        "4/15",
+        "member",
+        "portal",
+        "adoption",
+        "metrics",
+        "review"
+      ]
+    },
+    "memory:memory/2026-04-20.md:49:67": {
+      "key": "memory:memory/2026-04-20.md:49:67",
+      "path": "memory/2026-04-20.md",
+      "startLine": 49,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "## 🌙 End-of-Day Log (11:45 PM PT) ### Status at Close **Blockers:** Still waiting on Jake for: - Website redesign final approval (8 days) — ready to deploy - Reminder test verification (5 days) — did Tue 4/15 reminders arrive? - Mobile screenshot feedback (13 days) — final polish needed **Production:** All systems green. No incidents. **Notes for tomorrow:** These three items are the bottleneck. Website approval is the highest-leverage next step — 15-min review → immediate launch. Reminder verification is simpler but also critical (unblocks member notifications). --- ## Summary All systems green. Three blockers remain open from last week — website approval and reminder verification a",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3268591700011283,
+      "maxScore": 0.45335713331258165,
+      "firstRecalledAt": "2026-04-23T14:30:09.406Z",
+      "lastRecalledAt": "2026-04-26T14:30:20.241Z",
+      "queryHashes": [
+        "7f03e4649da2",
+        "7984f719222a",
+        "bc16949e682b"
+      ],
+      "recallDays": [
+        "2026-04-23",
+        "2026-04-24",
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "end-of-day",
+        "4/15",
+        "highest-leverage",
+        "15-min",
+        "end",
+        "day",
+        "log",
+        "status"
+      ]
+    },
+    "memory:memory/2026-04-21.md:62:82": {
+      "key": "memory:memory/2026-04-21.md:62:82",
+      "path": "memory/2026-04-21.md",
+      "startLine": 62,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "2. **Website approval (10–15 min)** — Sign off on redesign at http://localhost:8090. Unblocks public launch (8-day blocker). **TIER 2 — HIGH IMPACT** 3. **Mobile feedback (5 min)** — Final day nav screenshot sign-off. 4. **Member portal adoption check (5 min)** — Review /admin.html → Members tab stats. --- ## Notes All critical blockers are approval-gated on your side. Website is the quickest high-leverage win (15 min → live). Production is clean. Ready when you are. --- ## Afternoon Session — ~2:50 PM PT ### Member Profile Tier Editing (Fix Built) - **Issue:** Jake reported that the member profile view (added recently) lost the ability to edit membership tiers. Specifically: reactiva",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9064110669405048,
+      "maxScore": 0.45353473585241866,
+      "firstRecalledAt": "2026-04-23T14:30:09.406Z",
+      "lastRecalledAt": "2026-04-24T14:30:10.295Z",
+      "queryHashes": [
+        "7f03e4649da2",
+        "7984f719222a"
+      ],
+      "recallDays": [
+        "2026-04-23",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "8-day",
+        "sign-off",
+        "admin.html",
+        "approval-gated",
+        "high-leverage",
+        "website",
+        "approval",
+        "min"
+      ]
+    },
+    "memory:memory/2026-04-20.md:1:32": {
+      "key": "memory:memory/2026-04-20.md:1:32",
+      "path": "memory/2026-04-20.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# Daily Log — Monday, April 20th, 2026 ## 📋 Morning Briefing (7:30 AM PT) ### 1. CALENDAR No scheduled meetings or gym events visible (Google Calendar API not configured). Monday — standard gym operations. ### 2. OPEN THREADS & WAITING ON **🔴 CRITICAL BLOCKERS (Most urgent first)** - **Website redesign approval (8 days old)** — localhost:8090 fully built with design, pricing, free class form, responsive layout, embedded live schedule iframe. **Status:** STILL PENDING FINAL APPROVAL. Ready to deploy to DreamHost in 5 minutes once approved. This is the highest-leverage item blocking public launch. - **Reminder test verification (5 days old)** — You booked classes Mon 4/14 7:30 & 7:45 P",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8963615164712808,
+      "maxScore": 0.45263462507498775,
+      "firstRecalledAt": "2026-04-23T14:30:09.406Z",
+      "lastRecalledAt": "2026-04-24T14:30:10.295Z",
+      "queryHashes": [
+        "7f03e4649da2",
+        "7984f719222a"
+      ],
+      "recallDays": [
+        "2026-04-23",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "highest-leverage",
+        "4/14",
+        "log",
+        "monday",
+        "april",
+        "20th",
+        "morning",
+        "briefing"
+      ]
+    },
+    "memory:memory/2026-04-21.md:1:41": {
+      "key": "memory:memory/2026-04-21.md:1:41",
+      "path": "memory/2026-04-21.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# Daily Log — Tuesday, April 21st, 2026 ## 📋 Morning Briefing (7:30 AM PT) ### 1. CALENDAR No scheduled meetings visible. Standard gym operations day. ### 2. OPEN THREADS & WAITING ON **🔴 CRITICAL BLOCKERS** - **Website redesign approval (8 days old)** — Fully built, ready to deploy to DreamHost. Blocked on final sign-off. Highest-leverage next step. - **Reminder test verification (5 days old)** — You booked two classes after cutoff on 4/14. Did 24-hour reminders arrive Tue 4/15? Unblocks member notifications. - **Mobile screenshot feedback (13 days old)** — Final polish on schedule day nav UI. ### 3. PRODUCTION HEALTH ✅ - ✅ **bayareaboxing.net** → Responsive, redirects normal - ✅ *",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8891177753188881,
+      "maxScore": 0.4554485107583427,
+      "firstRecalledAt": "2026-04-23T14:30:09.406Z",
+      "lastRecalledAt": "2026-04-28T06:45:13.029Z",
+      "queryHashes": [
+        "7f03e4649da2",
+        "f2e90aa0d33d"
+      ],
+      "recallDays": [
+        "2026-04-23",
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "sign-off",
+        "highest-leverage",
+        "4/14",
+        "24-hour",
+        "4/15",
+        "bayareaboxing.net",
+        "log",
+        "tuesday"
+      ]
+    },
+    "memory:memory/2026-04-16.md:63:76": {
+      "key": "memory:memory/2026-04-16.md:63:76",
+      "path": "memory/2026-04-16.md",
+      "startLine": 63,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "- ⏳ **Website redesign approval** — Status unclear (awaiting Jake review) - ⏳ **Mobile screenshot feedback** — Status unclear (awaiting Jake input) ### Production Health (EOD) ✅ - Both main sites still operational - No new incidents reported - All systems stable ### Notes for Tomorrow - Follow up on three critical blockers if not resolved - Reminder test verification is highest priority (2-min check unblocks member reminders) - Website redesign approval next (5-day blocker, can deploy immediately once approved) - Check member portal adoption metrics if not done today",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8415612515826973,
+      "maxScore": 0.42212611317162646,
+      "firstRecalledAt": "2026-04-23T14:30:09.406Z",
+      "lastRecalledAt": "2026-04-24T14:30:10.295Z",
+      "queryHashes": [
+        "7f03e4649da2",
+        "7984f719222a"
+      ],
+      "recallDays": [
+        "2026-04-23",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "2-min",
+        "5-day",
+        "website",
+        "redesign",
+        "approval",
+        "status",
+        "unclear",
+        "awaiting"
+      ]
+    },
+    "memory:memory/2026-04-19.md:1:32": {
+      "key": "memory:memory/2026-04-19.md:1:32",
+      "path": "memory/2026-04-19.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# Daily Log — Sunday, April 19th, 2026 ## 📋 Morning Briefing (7:30 AM PT) ### 1. CALENDAR No scheduled meetings or gym events visible (Google Calendar API not configured). Sunday — gym running weekend classes as usual. ### 2. OPEN THREADS & WAITING ON **🔴 CRITICAL BLOCKERS (Most urgent first)** - **Website redesign approval (7 days old)** — localhost:8090 fully built with design, pricing, free class form, responsive layout, embedded live schedule iframe. **Status:** PENDING FINAL APPROVAL. Once approved, deploy to DreamHost immediately (5-min operation). - **Reminder test verification (4 days old)** — You booked classes Mon 4/14 7:30 & 7:45 PM (after 1-hour cutoff). 24-hour reminders",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8761711694433669,
+      "maxScore": 0.43839171058572496,
+      "firstRecalledAt": "2026-04-23T14:30:09.406Z",
+      "lastRecalledAt": "2026-04-24T14:30:10.295Z",
+      "queryHashes": [
+        "7f03e4649da2",
+        "7984f719222a"
+      ],
+      "recallDays": [
+        "2026-04-23",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "5-min",
+        "4/14",
+        "1-hour",
+        "24-hour",
+        "log",
+        "sunday",
+        "april",
+        "19th"
+      ]
+    },
+    "memory:memory/2026-04-14.md:52:65": {
+      "key": "memory:memory/2026-04-14.md:52:65",
+      "path": "memory/2026-04-14.md",
+      "startLine": 52,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "**Morning:** Briefing generated via cron. Flagged three blocking items needing Jake approval. **Daytime:** (Session history not accessible to this cron job — check main session for details) **Evening (11:45 PM):** End-of-day consolidation. Reminder test window (7:30–7:45 PM) has passed. Status unknown — need to check if Jake reported results in main session. **Status Summary:** - Reminder test timing: PENDING VERIFICATION - Website redesign: PENDING APPROVAL - Mobile screenshots: PENDING FEEDBACK - All production systems: OPERATIONAL **Notes for tomorrow:** If reminder test succeeded, that unblocks broader class reminder feature. Website redesign approval is the critical path blocker — o",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.389813655471604,
+      "maxScore": 0.389813655471604,
+      "firstRecalledAt": "2026-04-23T14:30:09.406Z",
+      "lastRecalledAt": "2026-04-23T14:30:09.406Z",
+      "queryHashes": [
+        "7f03e4649da2"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "end-of-day",
+        "morning",
+        "briefing",
+        "generated",
+        "via",
+        "cron",
+        "flagged",
+        "three"
+      ]
+    },
+    "memory:memory/2026-04-22.md:1:29": {
+      "key": "memory:memory/2026-04-22.md:1:29",
+      "path": "memory/2026-04-22.md",
+      "startLine": 1,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "# Daily Log — Wednesday, April 22nd, 2026 ## 📋 Morning Briefing (7:30 AM PT) ### 1. CALENDAR No scheduled meetings or events visible for Wednesday. Standard gym operations day. ### 2. OPEN THREADS & WAITING ON **🔴 CRITICAL BLOCKERS (Most urgent first)** - **Website redesign approval (9 days old)** — Fully built at http://localhost:8090, ready to deploy to DreamHost in <5 min. Feature-complete with dark aesthetic, programs section, live embedded schedule, pricing, testimonials, free class form, responsive layout. **Status:** AWAITING FINAL SIGN-OFF. This is the highest-leverage blocker. - **Member profile tier editing fix (deployed? TBD)** — Built and committed (commit 641b7e7) on Apr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46937821818401826,
+      "maxScore": 0.46937821818401826,
+      "firstRecalledAt": "2026-04-24T14:30:10.295Z",
+      "lastRecalledAt": "2026-04-24T14:30:10.295Z",
+      "queryHashes": [
+        "7984f719222a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "feature-complete",
+        "sign-off",
+        "highest-leverage",
+        "log",
+        "wednesday",
+        "april",
+        "22nd",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-21.md:99:119": {
+      "key": "memory:memory/2026-04-21.md:99:119",
+      "path": "memory/2026-04-21.md",
+      "startLine": 99,
+      "endLine": 119,
+      "source": "memory",
+      "snippet": "**What got done:** - ✅ Diagnosed member profile tier editing bug (missing tier select + billing start fields) - ✅ Built and committed fix (commit 641b7e7) - ✅ Production health stable all day (no incidents) **What's waiting on Jake:** - 🔴 Deploy member profile fix → `railway up` (Terminal or Telegram /approve — latter still broken) - 🔴 Website redesign approval + deployment (8-day blocker, ready to go live) - 🔴 Reminder test verification (confirm if 4/15 24-hr reminders arrived) **Key status:** - Tier editing fix is **code-complete and committed**, not yet live - /approve via Telegram continues to fail — Jake must use Terminal for approvals - No blocking production issues **Tomorrow pr",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8848091757149423,
+      "maxScore": 0.4504248211685815,
+      "firstRecalledAt": "2026-04-24T14:30:10.295Z",
+      "lastRecalledAt": "2026-04-28T06:45:13.029Z",
+      "queryHashes": [
+        "7984f719222a",
+        "f2e90aa0d33d"
+      ],
+      "recallDays": [
+        "2026-04-24",
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "8-day",
+        "4/15",
+        "24-hr",
+        "code-complete",
+        "what",
+        "got",
+        "done",
+        "diagnosed"
+      ]
+    },
+    "memory:memory/2026-04-24.md:25:43": {
+      "key": "memory:memory/2026-04-24.md:25:43",
+      "path": "memory/2026-04-24.md",
+      "startLine": 25,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "- **Member profile tier fix verification (4 days deployed?)** — Built and committed Apr 21 (commit 641b7e7). Adds tier select + billing start fields to member profile modal. **Status:** UNCLEAR if live. Confirm in /admin.html → Members tab, or deploy via `railway up` if not yet live. - **Reminder test verification (7 days old)** — You booked classes Mon 4/14 7:30 & 7:45 PM (after 1-hour cutoff). 24-hour reminders should have fired Tue 4/15 ~7:30–7:45 PM PT. **Status:** PENDING CONFIRMATION. Critical for member notifications. - **Mobile screenshot feedback (15 days old)** — Day nav pill rendering on mobile. **Status:** PENDING. Final polish needed. **Yesterday's wins (Apr 23):** - Activate",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9251460746061454,
+      "maxScore": 0.49024110357911366,
+      "firstRecalledAt": "2026-04-25T14:30:08.208Z",
+      "lastRecalledAt": "2026-04-26T14:30:20.241Z",
+      "queryHashes": [
+        "8961f2e135c5",
+        "bc16949e682b"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "4/14",
+        "1-hour",
+        "24-hour",
+        "4/15",
+        "member",
+        "profile",
+        "tier"
+      ]
+    },
+    "memory:memory/2026-04-24.md:40:57": {
+      "key": "memory:memory/2026-04-24.md:40:57",
+      "path": "memory/2026-04-24.md",
+      "startLine": 40,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "1. **Website redesign approval (10–15 min)** — Review http://localhost:8090 for final feedback on design, pricing, copy, free class form, CTAs, hours. Approval → immediate deployment. HIGHEST-LEVERAGE item (10-day blocker). 2. **Verify member profile tier fix deployed (2 min)** — Check /admin.html → Members tab. Can you edit tier + billing start in the modal? If not deployed, run: `cd ~/.openclaw/workspace/projects/bab-scheduler && railway up` 3. **Reminder test verification (2 min)** — Confirm: Did Tue 4/15 24-hour reminders arrive in your inbox/SMS? This unblocks member notifications for all. **🟡 TIER 2 — HIGH IMPACT, LOW EFFORT** 4. **Mobile screenshot feedback (5 min)** — Final day",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9302789237930317,
+      "maxScore": 0.4849195852036496,
+      "firstRecalledAt": "2026-04-25T14:30:08.208Z",
+      "lastRecalledAt": "2026-04-26T14:30:20.241Z",
+      "queryHashes": [
+        "8961f2e135c5",
+        "bc16949e682b"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "highest-leverage",
+        "10-day",
+        "admin.html",
+        "4/15",
+        "24-hour",
+        "inbox/sms",
+        "website",
+        "redesign"
+      ]
+    },
+    "memory:memory/2026-04-23.md:18:50": {
+      "key": "memory:memory/2026-04-23.md:18:50",
+      "path": "memory/2026-04-23.md",
+      "startLine": 18,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "- **Mobile screenshot feedback (14 days old)** — Day nav pill rendering on mobile. **Status:** PENDING. Final polish on schedule UI. ### 3. PRODUCTION HEALTH ✅ - ✅ **bayareaboxing.net** → 301 redirect (normal) - ✅ **schedule.bayareaboxing.net** → 302 redirect (normal) - No incidents overnight. All systems operational. ### 4. PROPOSED PRIORITIES (Ranked by Impact) **🔴 TIER 1 — CRITICAL PATH (High Impact, Quick Wins)** 1. **Website redesign approval (10–15 min)** — Review http://localhost:8090. Feedback on design, pricing, copy, free class form, CTAs, hours. Approval → immediate DreamHost deployment. Unblocks public launch (9-day blocker — HIGHEST IMPACT). 2. **Verify member profile tie",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9021312741503755,
+      "maxScore": 0.47192347374485843,
+      "firstRecalledAt": "2026-04-25T14:30:08.208Z",
+      "lastRecalledAt": "2026-04-26T14:30:20.241Z",
+      "queryHashes": [
+        "8961f2e135c5",
+        "bc16949e682b"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "bayareaboxing.net",
+        "schedule.bayareaboxing.net",
+        "9-day",
+        "mobile",
+        "screenshot",
+        "feedback",
+        "days",
+        "old"
+      ]
+    },
+    "memory:memory/2026-04-23.md:40:60": {
+      "key": "memory:memory/2026-04-23.md:40:60",
+      "path": "memory/2026-04-23.md",
+      "startLine": 40,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "5. **Check member portal adoption (5 min)** — Review /admin.html → Members tab for beta usage metrics. --- ## Notes Website redesign is the longest-standing blocker and the quickest win to unstick. 15-min review → live. Member profile tier fix needs verification + deployment if not already live. Everything else is waiting on your input. Production is clean. ## Evening Session (Apr 23) ### Fixes shipped today - **Activate button** — removed requireAdmin middleware from all member routes, was blocking UI calls - **Mobile schedule blank** — renderAgenda was using mobileDayStart (0=Mon) instead of mobileDayIdx (selected day) - **Mobile day arrows** — shiftMobilePrev/Next weren't syncing mob",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4246445547976689,
+      "maxScore": 0.4246445547976689,
+      "firstRecalledAt": "2026-04-26T14:30:20.241Z",
+      "lastRecalledAt": "2026-04-26T14:30:20.241Z",
+      "queryHashes": [
+        "bc16949e682b"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "longest-standing",
+        "15-min",
+        "shiftmobileprev/next",
+        "check",
+        "member",
+        "portal",
+        "adoption"
+      ]
+    },
+    "memory:memory/2026-04-26.md:56:81": {
+      "key": "memory:memory/2026-04-26.md:56:81",
+      "path": "memory/2026-04-26.md",
+      "startLine": 56,
+      "endLine": 81,
+      "source": "memory",
+      "snippet": "- Retention: 7 backups on file, 30-day window ## Open Threads (Status as of Sunday, Apr 26, 7:30 AM) 1. **Website redesign approval (waiting 11 days)** — Review at http://localhost:8090. Design, pricing, copy, CTAs, free class form all complete. Approval → immediate deployment. **HIGHEST IMPACT ITEM** (unblocks public launch). 2. **Member profile tier fix verification (4+ days)** — Built Apr 21 (commit 641b7e7). Adds tier select + billing start fields to member profile modal. **Status: UNCLEAR if deployed.** Confirm in /admin.html → Members tab. If not live, deploy via `cd ~/.openclaw/workspace/projects/bab-scheduler && railway up` 3. **Reminder test verification (7+ days)** — Jake booke",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9761798345295136,
+      "maxScore": 0.4998075752181818,
+      "firstRecalledAt": "2026-04-27T14:30:13.286Z",
+      "lastRecalledAt": "2026-04-29T14:30:14.594Z",
+      "queryHashes": [
+        "6ceef9be7fe8",
+        "e2359c97bb1d"
+      ],
+      "recallDays": [
+        "2026-04-27",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "30-day",
+        "admin.html",
+        "retention",
+        "day",
+        "window",
+        "open"
+      ]
+    },
+    "memory:memory/2026-04-25.md:28:52": {
+      "key": "memory:memory/2026-04-25.md:28:52",
+      "path": "memory/2026-04-25.md",
+      "startLine": 28,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "2. **Verify member profile tier fix (2 min)** — Check /admin.html Members tab. Can you edit tier + billing start? If not, run: `cd ~/.openclaw/workspace/projects/bab-scheduler && railway up` 3. **Reminder test verification (2 min)** — Confirm Tue 4/15 reminders arrived. Unblocks member notifications for all. **TIER 2 — High Impact, Low Effort** 4. **Mobile screenshot feedback (5 min)** — Final UI polish on schedule page. --- **Time-to-impact ranking:** Website review is the multiplier (unblocks business, not just code). Do that first. ## End-of-Day Summary (11:45 PM) **Day Status:** Quiet day — monitoring + maintenance only. No code deploys or major changes. **All Open Threads Still P",
+      "recallCount": 8,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.573690816776671,
+      "maxScore": 0.49519386693263745,
+      "firstRecalledAt": "2026-04-27T14:30:13.286Z",
+      "lastRecalledAt": "2026-05-05T18:47:08.259Z",
+      "queryHashes": [
+        "6ceef9be7fe8",
+        "f2e90aa0d33d",
+        "e2359c97bb1d",
+        "a40c4c920538",
+        "55fd23acbe84",
+        "90cfe36633f5",
+        "26130c50e1e7"
+      ],
+      "recallDays": [
+        "2026-04-27",
+        "2026-04-29",
+        "2026-04-30",
+        "2026-05-01",
+        "2026-05-02",
+        "2026-05-04",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "4/15",
+        "time-to-impact",
+        "end-of-day",
+        "verify",
+        "member",
+        "profile",
+        "tier"
+      ]
+    },
+    "memory:memory/2026-04-24.md:1:28": {
+      "key": "memory:memory/2026-04-24.md:1:28",
+      "path": "memory/2026-04-24.md",
+      "startLine": 1,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "# Daily Log — Friday, April 24th, 2026 ## 📋 Morning Briefing (7:30 AM PT) ### 1. PRODUCTION HEALTH ✅ - ✅ **schedule.bayareaboxing.net** → 302 redirect (normal, healthy) - ✅ **bayareaboxing.net** → 301 redirect (normal, healthy) - **Status:** All systems operational. No incidents overnight. ### 2. BACKUP STATUS ✅ - **Members:** 123 active - **Bookings:** 200 total - **Backups on file:** 3 (30-day retention) - **Last backup:** 2026-04-24_07-30-09 → Google Drive ✅ - **Status:** Nightly backup running successfully. ### 3. OPEN THREADS & WAITING ON **🔴 CRITICAL BLOCKERS (Most urgent first)** - **Website redesign approval (10 days old)** — Fully built at http://localhost:8090. Feature-co",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3469429456405568,
+      "maxScore": 0.46610443294672105,
+      "firstRecalledAt": "2026-04-27T14:30:13.286Z",
+      "lastRecalledAt": "2026-05-01T14:30:14.152Z",
+      "queryHashes": [
+        "6ceef9be7fe8",
+        "f2e90aa0d33d",
+        "55fd23acbe84"
+      ],
+      "recallDays": [
+        "2026-04-27",
+        "2026-05-01"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "schedule.bayareaboxing.net",
+        "bayareaboxing.net",
+        "30-day",
+        "2026-04-24-07-30-09",
+        "feature-co",
+        "log"
+      ]
+    },
+    "memory:memory/2026-04-26.md:1:30": {
+      "key": "memory:memory/2026-04-26.md:1:30",
+      "path": "memory/2026-04-26.md",
+      "startLine": 1,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "# 2026-04-26 — Sunday Morning Briefing ## Production Health ✅ - **bayareaboxing.net:** 200 OK - **schedule.bayareaboxing.net:** 200 OK - All systems operational. ## Backup Status ✅ - Backup ran 7:30 AM - Members: 139 | Bookings: 200 - Stored: Google Drive (BAB-Scheduler-Backups/) - Retention: 7 backups on file, 30-day window ## Open Threads (Status as of Sunday, Apr 26, 7:30 AM) 1. **Website redesign approval (waiting 11 days)** — Review at http://localhost:8090. Design, pricing, copy, CTAs, free class form all complete. Approval → immediate deployment. **HIGHEST IMPACT ITEM** (unblocks public launch). 2. **Member profile tier fix verification (4+ days)** — Built Apr 21 (commit 641b7e",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.952555145410946,
+      "maxScore": 0.49106214724339237,
+      "firstRecalledAt": "2026-04-27T14:30:13.286Z",
+      "lastRecalledAt": "2026-04-29T14:30:14.594Z",
+      "queryHashes": [
+        "6ceef9be7fe8",
+        "e2359c97bb1d"
+      ],
+      "recallDays": [
+        "2026-04-27",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "bayareaboxing.net",
+        "schedule.bayareaboxing.net",
+        "bab-scheduler-backups",
+        "30-day",
+        "sunday",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-26.md:73:104": {
+      "key": "memory:memory/2026-04-26.md:73:104",
+      "path": "memory/2026-04-26.md",
+      "startLine": 73,
+      "endLine": 104,
+      "source": "memory",
+      "snippet": "2. **Verify member profile tier fix (2 min)** — Check /admin.html Members tab. Can you edit tier + billing start? If not deployed, run: `railway up` 3. **Reminder test verification (2 min)** — Confirm Tue 4/15 reminders arrived. Unblocks member notifications. **TIER 2 — High Impact, Low Effort** 4. **Mobile screenshot feedback (5 min)** — Final UI polish on schedule page. --- **Key blocker:** Website review is the highest-leverage item — 15-min review → immediate public launch. Everything else flows from there. **Next steps:** Awaiting Jake's green light on these items. Systems remain stable and operational. --- ## Afternoon / Evening Session — Apr 26, 2026 ### BAB Scheduler Fixes De",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9094239377910228,
+      "maxScore": 0.4865484143479106,
+      "firstRecalledAt": "2026-04-28T06:45:13.029Z",
+      "lastRecalledAt": "2026-05-02T14:30:13.569Z",
+      "queryHashes": [
+        "f2e90aa0d33d",
+        "90cfe36633f5"
+      ],
+      "recallDays": [
+        "2026-04-27",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "4/15",
+        "highest-leverage",
+        "15-min",
+        "verify",
+        "member",
+        "profile",
+        "tier"
+      ]
+    },
+    "memory:memory/2026-04-23.md:1:29": {
+      "key": "memory:memory/2026-04-23.md:1:29",
+      "path": "memory/2026-04-23.md",
+      "startLine": 1,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "# Daily Log — Thursday, April 23rd, 2026 ## 📋 Morning Briefing (7:30 AM PT) ### 1. CALENDAR No scheduled meetings or events visible for Thursday. Standard gym operations day. ### 2. OPEN THREADS & WAITING ON **🔴 CRITICAL BLOCKERS (Most urgent first)** - **Website redesign approval (9 days old)** — Fully built at http://localhost:8090, ready to deploy to DreamHost in <5 min. Feature-complete with dark aesthetic, programs section, live embedded schedule, pricing, testimonials, free class form, responsive layout. **Status:** AWAITING FINAL SIGN-OFF. This is the highest-leverage blocker. - **Member profile tier editing fix (deployed? TBD)** — Built and committed (commit 641b7e7) on April",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8640425961522695,
+      "maxScore": 0.45514824921514246,
+      "firstRecalledAt": "2026-04-28T06:45:13.029Z",
+      "lastRecalledAt": "2026-05-01T14:30:14.152Z",
+      "queryHashes": [
+        "f2e90aa0d33d",
+        "55fd23acbe84"
+      ],
+      "recallDays": [
+        "2026-04-27",
+        "2026-05-01"
+      ],
+      "conceptTags": [
+        "feature-complete",
+        "sign-off",
+        "highest-leverage",
+        "log",
+        "thursday",
+        "april",
+        "23rd",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-28.md:57:84": {
+      "key": "memory:memory/2026-04-28.md:57:84",
+      "path": "memory/2026-04-28.md",
+      "startLine": 57,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "- **Stored:** Google Drive (BAB-Scheduler-Backups/) ## Open Threads (Carryover from Monday) 1. **Website redesign approval (waiting 13 days)** — Fully built at http://localhost:8090. Design, pricing, copy, CTAs, free class form all complete. **Status: PENDING REVIEW.** Approval → immediate deployment. **HIGHEST IMPACT ITEM** (unblocks public launch). 2. **Member profile tier fix verification (6 days)** — Built Apr 21 (commit 641b7e7). Adds tier select + billing start fields to member profile modal. **Status: UNCLEAR if deployed.** Confirm in /admin.html → Members tab. If not live: `cd ~/.openclaw/workspace/projects/bab-scheduler && railway up` 3. **Reminder test verification (9 days)** —",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.4037765273168816,
+      "maxScore": 0.4867443477892692,
+      "firstRecalledAt": "2026-04-29T14:30:14.594Z",
+      "lastRecalledAt": "2026-05-02T14:30:13.569Z",
+      "queryHashes": [
+        "e2359c97bb1d",
+        "55fd23acbe84",
+        "90cfe36633f5"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-05-01",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "bab-scheduler-backups",
+        "admin.html",
+        "stored",
+        "google",
+        "drive",
+        "bab"
+      ]
+    },
+    "memory:memory/2026-04-27.md:1:31": {
+      "key": "memory:memory/2026-04-27.md:1:31",
+      "path": "memory/2026-04-27.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "# 2026-04-27 — Monday Morning Briefing (7:30 AM PT) ## Production Health ✅ - **bayareaboxing.net:** 301 (redirect — normal) - **schedule.bayareaboxing.net:** 302 (redirect — normal) - **Status:** All systems operational. No incidents. ## Backup Status ✅ - Backup ran successfully at 7:30 AM - **Members:** 146 (↑7 from Sunday) - **Bookings:** 200 - **Backups on file:** 9 (30-day retention) - **Stored:** Google Drive (BAB-Scheduler-Backups/) ## Open Threads (Carryover from Sunday) 1. **Website redesign approval (waiting 12 days)** — Fully built at http://localhost:8090. Design, pricing, copy, CTAs, free class form all complete. **Status: PENDING REVIEW.** Approval → immediate deployment.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46365150834229457,
+      "maxScore": 0.46365150834229457,
+      "firstRecalledAt": "2026-04-29T14:30:14.594Z",
+      "lastRecalledAt": "2026-04-29T14:30:14.594Z",
+      "queryHashes": [
+        "e2359c97bb1d"
+      ],
+      "recallDays": [
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "bayareaboxing.net",
+        "schedule.bayareaboxing.net",
+        "30-day",
+        "bab-scheduler-backups",
+        "monday",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-30.md:66:94": {
+      "key": "memory:memory/2026-04-30.md:66:94",
+      "path": "memory/2026-04-30.md",
+      "startLine": 66,
+      "endLine": 94,
+      "source": "memory",
+      "snippet": "4. **Mobile screenshot feedback (18 days)** — Day nav pill rendering on mobile. **Status: PENDING.** Final UI polish. ## Proposed Priorities (Ranked by Impact) **TIER 1 — Critical Path (Quick Wins)** 1. **Website redesign review (10–15 min)** — http://localhost:8090. 15-day blocker. Approve → deploy → launch. **Highest leverage.** 2. **Verify member profile tier fix (2 min)** — Check /admin.html Members tab. 3. **Reminder test confirmation (2 min)** — Confirm Tue 4/15 reminders landed. **TIER 2 — High Impact, Low Effort** 4. **Mobile screenshot feedback (5 min)** — Final UI polish. --- **Summary:** Website redesign is the multiplier. Everything else is minor cleanup. Member growth con",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.511665591810741,
+      "maxScore": 0.511665591810741,
+      "firstRecalledAt": "2026-05-01T06:45:15.813Z",
+      "lastRecalledAt": "2026-05-01T06:45:15.813Z",
+      "queryHashes": [
+        "a40c4c920538"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "15-day",
+        "admin.html",
+        "4/15",
+        "mobile",
+        "screenshot",
+        "feedback",
+        "days",
+        "day"
+      ]
+    },
+    "memory:memory/2026-04-30.md:1:30": {
+      "key": "memory:memory/2026-04-30.md:1:30",
+      "path": "memory/2026-04-30.md",
+      "startLine": 1,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "# 2026-04-30 — Thursday Morning Briefing (7:30 AM PT) ## Production Health ✅ - **bayareaboxing.net:** 301 (redirect) → healthy - **schedule.bayareaboxing.net:** 302 (redirect) → healthy - **Status:** All systems operational. No incidents. ## Backup Status ✅ - Backup ran successfully at 7:30 AM - **Members:** 217 (↑19 from yesterday) - **Bookings:** 200 - **Backups on file:** 15 (30-day retention) - **Stored:** Google Drive (BAB-Scheduler-Backups/) ## Open Threads (Carryover from Wednesday) 1. **Website redesign approval (15 days pending)** — Fully built at http://localhost:8090. Design, pricing, copy, CTAs, free class form all complete. **Status: PENDING REVIEW.** Approval → immediate",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4989458234066692,
+      "maxScore": 0.4989458234066692,
+      "firstRecalledAt": "2026-05-01T06:45:15.813Z",
+      "lastRecalledAt": "2026-05-01T06:45:15.813Z",
+      "queryHashes": [
+        "a40c4c920538"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "bayareaboxing.net",
+        "schedule.bayareaboxing.net",
+        "30-day",
+        "bab-scheduler-backups",
+        "thursday",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-28.md:104:130": {
+      "key": "memory:memory/2026-04-28.md:104:130",
+      "path": "memory/2026-04-28.md",
+      "startLine": 104,
+      "endLine": 130,
+      "source": "memory",
+      "snippet": "- Non-registered (walk-ins/guests): name in muted gray, not clickable, tooltip says \"Not a registered member\" - Server does SQL JOIN to attach `member_id` to each booking row (no client-side lookup race) - `openMemberProfile()` falls back to direct `/api/admin/members/:id` fetch if `_allMembers` not loaded - Member profile modal moved outside `view-members` div so it renders from any tab ### 4. Attendee Row Alignment Fix - Buttons (Attended / Reschedule / Cancel) now in single horizontal row per attendee - Wrapped in flex div to fix `<td>` display inconsistencies across browsers - `flex-wrap: nowrap` prevents stacking ### Key Bug Fixes - `member-profile-modal` was nested inside hidden `vie",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47840941453494557,
+      "maxScore": 0.47840941453494557,
+      "firstRecalledAt": "2026-05-01T06:45:15.813Z",
+      "lastRecalledAt": "2026-05-01T06:45:15.813Z",
+      "queryHashes": [
+        "a40c4c920538"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "non-registered",
+        "walk-ins/guests",
+        "member-id",
+        "client-side",
+        "api/admin/members",
+        "view-members",
+        "flex-wrap",
+        "member-profile-modal"
+      ]
+    },
+    "memory:memory/2026-04-28.md:125:141": {
+      "key": "memory:memory/2026-04-28.md:125:141",
+      "path": "memory/2026-04-28.md",
+      "startLine": 125,
+      "endLine": 141,
+      "source": "memory",
+      "snippet": "✅ **Key bug fixes resolved** (modal visibility, async race condition, database method clarity) ✅ **Production stable** — no incidents all day, members up +29 to 175 ### Key Context for Tomorrow - **Website redesign** still pending Jake's review (13-day blocker). Ready to deploy at http://localhost:8090 once approved. - **Member profile tier fix** — verify if deployed or needs `railway up` - **Reminder test** — confirm Tue 4/15 notifications fired (critical for system reliability) - **Admin modal refactors** are solid — member profile modal now accessible from any tab, roster UX much better ### Lessons / Notes - Modal nesting in hidden divs is a gotcha — always verify render context when el",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48396662111109623,
+      "maxScore": 0.48396662111109623,
+      "firstRecalledAt": "2026-05-01T06:45:15.813Z",
+      "lastRecalledAt": "2026-05-01T06:45:15.813Z",
+      "queryHashes": [
+        "a40c4c920538"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "13-day",
+        "4/15",
+        "key",
+        "bug",
+        "fixes",
+        "resolved",
+        "modal",
+        "visibility"
+      ]
+    },
+    "memory:memory/2026-04-27.md:132:149": {
+      "key": "memory:memory/2026-04-27.md:132:149",
+      "path": "memory/2026-04-27.md",
+      "startLine": 132,
+      "endLine": 149,
+      "source": "memory",
+      "snippet": "- Heartbeat monitoring ran throughout active hours (8 AM–12 PM) ✅ - Two transient website timeouts observed (8:34 AM, recovered immediately) — pattern matches previous transient (Sun 9:04 PM); no sustained impact - All production systems remained operational - Backup completed successfully at 7:30 AM (146 members, 200 bookings) **Open Blockers (unchanged):** 1. **Website redesign approval** — 12+ days waiting. Fully built at http://localhost:8090. Ready to deploy immediately upon approval. 2. **Member profile tier fix verification** — Unclear if deployed. Needs: confirm in /admin.html Members tab or run `railway up`. 3. **Reminder test verification** — Pending confirmation Jake received 24-",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4665012397358829,
+      "maxScore": 0.4665012397358829,
+      "firstRecalledAt": "2026-05-01T06:45:15.813Z",
+      "lastRecalledAt": "2026-05-01T06:45:15.813Z",
+      "queryHashes": [
+        "a40c4c920538"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "backup",
+        "admin.html",
+        "heartbeat",
+        "monitoring",
+        "ran",
+        "throughout",
+        "active",
+        "hours"
+      ]
+    },
+    "memory:memory/2026-04-30.md:47:73": {
+      "key": "memory:memory/2026-04-30.md:47:73",
+      "path": "memory/2026-04-30.md",
+      "startLine": 47,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "- **schedule.bayareaboxing.net:** 302 (redirect) → healthy - **Status:** All systems operational. No incidents. ## Backup Status ✅ - Backup ran successfully at 7:30 AM - **Members:** 217 (↑19 from yesterday) - **Bookings:** 200 - **Backups on file:** 15 (30-day retention) - **Stored:** Google Drive (BAB-Scheduler-Backups/) ## Open Threads (Carryover from Wednesday) 1. **Website redesign approval (15 days pending)** — Fully built at http://localhost:8090. Design, pricing, copy, CTAs, free class form all complete. **Status: PENDING REVIEW.** Approval → immediate deployment. **HIGHEST IMPACT ITEM** (unblocks public launch). 2. **Member profile tier fix verification (7 days)** — Built Apr 2",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3457677963508496,
+      "maxScore": 0.48937404337952234,
+      "firstRecalledAt": "2026-05-01T14:30:14.152Z",
+      "lastRecalledAt": "2026-05-09T14:30:14.072Z",
+      "queryHashes": [
+        "55fd23acbe84",
+        "e2359c97bb1d",
+        "6ceef9be7fe8"
+      ],
+      "recallDays": [
+        "2026-05-01",
+        "2026-05-04",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "schedule.bayareaboxing.net",
+        "30-day",
+        "bab-scheduler-backups",
+        "redirect",
+        "healthy",
+        "status"
+      ]
+    },
+    "memory:memory/2026-04-29.md:25:60": {
+      "key": "memory:memory/2026-04-29.md:25:60",
+      "path": "memory/2026-04-29.md",
+      "startLine": 25,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "4. **Mobile screenshot feedback (17 days)** — Day nav pill rendering on mobile. **Status: PENDING.** Final UI polish. ## Proposed Priorities (Ranked by Impact) **TIER 1 — Critical Path (Quick Wins)** 1. **Website redesign review (10–15 min)** — http://localhost:8090. 14-day blocker. Approve → deploy → launch. **Highest leverage.** 2. **Verify member profile tier fix (2 min)** — Check /admin.html Members tab. 3. **Reminder test confirmation (2 min)** — Confirm Tue 4/15 reminders landed. **TIER 2 — High Impact, Low Effort** 4. **Mobile screenshot feedback (5 min)** — Final UI polish. --- **Takeaway:** Website review is the multiplier. Everything else is minor cleanup. All systems stable",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9218369071931799,
+      "maxScore": 0.4690731767929386,
+      "firstRecalledAt": "2026-05-01T14:30:14.152Z",
+      "lastRecalledAt": "2026-05-02T14:30:13.569Z",
+      "queryHashes": [
+        "55fd23acbe84",
+        "90cfe36633f5"
+      ],
+      "recallDays": [
+        "2026-05-01",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "14-day",
+        "admin.html",
+        "4/15",
+        "mobile",
+        "screenshot",
+        "feedback",
+        "days",
+        "day"
+      ]
+    },
+    "memory:memory/2026-04-27.md:49:75": {
+      "key": "memory:memory/2026-04-27.md:49:75",
+      "path": "memory/2026-04-27.md",
+      "startLine": 49,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "- **schedule.bayareaboxing.net:** 302 (redirect — normal) - **Status:** All systems operational. No incidents. ## Backup Status ✅ - Backup ran successfully at 7:30 AM - **Members:** 146 (↑7 from Sunday) - **Bookings:** 200 - **Backups on file:** 9 (30-day retention) - **Stored:** Google Drive (BAB-Scheduler-Backups/) ## Open Threads (Carryover from Sunday) 1. **Website redesign approval (waiting 12 days)** — Fully built at http://localhost:8090. Design, pricing, copy, CTAs, free class form all complete. **Status: PENDING REVIEW.** Approval → immediate deployment. **HIGHEST IMPACT ITEM** (unblocks public launch). 2. **Member profile tier fix verification (5 days)** — Built Apr 21 (commit",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4325362249626829,
+      "maxScore": 0.4325362249626829,
+      "firstRecalledAt": "2026-05-02T14:30:13.569Z",
+      "lastRecalledAt": "2026-05-02T14:30:13.569Z",
+      "queryHashes": [
+        "90cfe36633f5"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "schedule.bayareaboxing.net",
+        "30-day",
+        "bab-scheduler-backups",
+        "redirect",
+        "normal",
+        "status"
+      ]
+    },
+    "memory:memory/2026-05-02.md:53:82": {
+      "key": "memory:memory/2026-05-02.md:53:82",
+      "path": "memory/2026-05-02.md",
+      "startLine": 53,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "- My Bookings: color-coded left stripe by class type, 👤 badge for sub-member bookings (uses email comparison, handles same-name sub-members) - Linked sub-member bookings merged into main My Bookings list (previously only visible in Family Bookings section) - Stats auto-refresh on cancel - All-time classes fixed (was counting kiosk scans only, now counts confirmed past bookings) - Cancel buttons added to Family Bookings section - Admin delete endpoint for name-only sub-members added - Bug: sub-member booking under synthetic email was uncancellable from portal — fixed by admin cancel + family bookings cancel button - Jake confirmed: dev and main both merged ✅ BAB website preview tunnel spun",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.470310973428676,
+      "maxScore": 0.470310973428676,
+      "firstRecalledAt": "2026-05-03T20:25:05.135Z",
+      "lastRecalledAt": "2026-05-03T20:25:05.135Z",
+      "queryHashes": [
+        "ada3474ff94e"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "color-coded",
+        "sub-member",
+        "same-name",
+        "sub-members",
+        "auto-refresh",
+        "all-time",
+        "name-only",
+        "bookings"
+      ]
+    },
+    "memory:memory/2026-05-02.md:77:105": {
+      "key": "memory:memory/2026-05-02.md:77:105",
+      "path": "memory/2026-05-02.md",
+      "startLine": 77,
+      "endLine": 105,
+      "source": "memory",
+      "snippet": "- **Stored:** Google Drive (BAB-Scheduler-Backups/) ## Open Threads (Carryover from Friday) 1. **Website redesign approval (17 days pending)** — Fully built at http://localhost:8090. Design, pricing, copy, CTAs, free class form all complete. **Status: PENDING REVIEW.** Approval → immediate deployment. **CRITICAL BLOCKER** (unblocks public launch). 2. **Member profile tier fix verification (9 days)** — Built Apr 21 (commit 641b7e7). Adds tier select + billing start fields to member profile modal. **Status: UNCLEAR if deployed.** Confirm in /admin.html → Members tab. If not live: `cd ~/.openclaw/workspace/projects/bab-scheduler && railway up` 3. **Reminder test verification (12 days)** — J",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.2482768504855843,
+      "maxScore": 0.47503794206428973,
+      "firstRecalledAt": "2026-05-03T20:25:05.135Z",
+      "lastRecalledAt": "2026-05-09T14:30:14.072Z",
+      "queryHashes": [
+        "ada3474ff94e",
+        "e2359c97bb1d",
+        "302f9a03f3df",
+        "295ad19ce22c",
+        "6ceef9be7fe8"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-04",
+        "2026-05-06",
+        "2026-05-08",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "bab-scheduler-backups",
+        "admin.html",
+        "stored",
+        "google",
+        "drive",
+        "bab"
+      ]
+    },
+    "memory:memory/2026-05-03.md:29:69": {
+      "key": "memory:memory/2026-05-03.md:29:69",
+      "path": "memory/2026-05-03.md",
+      "startLine": 29,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "**TIER 1 — Critical Path** 1. **Website redesign review (10–15 min)** — http://localhost:8090. 18-day blocker. Approve → deploy → launch. **Highest leverage.** 2. **Mobile nav implementation (30–45 min)** — Hamburger pattern. Already approved. **Unblocks free-class.html launch.** **TIER 2 — High Impact, Low Effort** 3. **Verify member profile tier fix (2 min)** — Check /admin.html Members tab. 4. **Confirm reminder test (2 min)** — Verify Tue 4/15 emails were received. --- ## Notes - Member growth: 239 (+5 from Sat, trend continuing) - Website redesign is the primary blocker for public launch — sitting 18 days - All production systems remain stable and responsive # 2026-05-03 — Sunda",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.27895648955972,
+      "maxScore": 0.47890775483712933,
+      "firstRecalledAt": "2026-05-04T14:30:17.230Z",
+      "lastRecalledAt": "2026-05-09T14:30:14.072Z",
+      "queryHashes": [
+        "e2359c97bb1d",
+        "26130c50e1e7",
+        "302f9a03f3df",
+        "295ad19ce22c",
+        "6ceef9be7fe8"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-05",
+        "2026-05-06",
+        "2026-05-08",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "18-day",
+        "free-class.html",
+        "admin.html",
+        "4/15",
+        "tier",
+        "critical",
+        "path",
+        "website"
+      ]
+    },
+    "memory:memory/2026-05-02.md:1:31": {
+      "key": "memory:memory/2026-05-02.md:1:31",
+      "path": "memory/2026-05-02.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "# 2026-05-02 — Saturday Morning Briefing (7:30 AM PT) ## Production Health ✅ - **bayareaboxing.net:** 301 (redirect) → healthy - **schedule.bayareaboxing.net:** 302 (redirect) → healthy - **Status:** All systems operational. No incidents. ## Backup Status ✅ - Backup ran successfully at 7:30 AM - **Members:** 234 (↑5 from Friday) - **Bookings:** 200 - **Backups on file:** 19 (30-day retention) - **Stored:** Google Drive (BAB-Scheduler-Backups/) ## Open Threads (Carryover from Friday) 1. **Website redesign approval (17 days pending)** — Fully built at http://localhost:8090. Design, pricing, copy, CTAs, free class form all complete. **Status: PENDING REVIEW.** Approval → immediate deploym",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3245393369481788,
+      "maxScore": 0.4648639155900549,
+      "firstRecalledAt": "2026-05-04T14:30:17.230Z",
+      "lastRecalledAt": "2026-05-08T14:30:16.989Z",
+      "queryHashes": [
+        "e2359c97bb1d",
+        "302f9a03f3df",
+        "295ad19ce22c"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-06",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "bayareaboxing.net",
+        "schedule.bayareaboxing.net",
+        "30-day",
+        "bab-scheduler-backups",
+        "saturday",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-05-04.md:31:48": {
+      "key": "memory:memory/2026-05-04.md:31:48",
+      "path": "memory/2026-05-04.md",
+      "startLine": 31,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "1. **Website redesign review (10–15 min)** — http://localhost:8090. 18-day blocker. Approve → deploy → launch. **Highest leverage.** 2. **Mobile nav implementation (30–45 min)** — Hamburger pattern. Already approved. **Unblocks free-class.html launch.** **TIER 2 — High Impact, Low Effort** 3. **Verify member profile tier fix (2 min)** — Check /admin.html Members tab. 4. **Confirm reminder test (2 min)** — Verify Tue 4/15 emails were received. --- ## Notes - Member growth: 246 (steady growth trend, +7 from Sat) - Website redesign is the primary blocker for public launch — sitting 18 days - All production systems remain stable and responsive",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9542932692043957,
+      "maxScore": 0.4923371658701841,
+      "firstRecalledAt": "2026-05-05T18:47:08.259Z",
+      "lastRecalledAt": "2026-05-06T14:30:13.590Z",
+      "queryHashes": [
+        "26130c50e1e7",
+        "302f9a03f3df"
+      ],
+      "recallDays": [
+        "2026-05-05",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "18-day",
+        "free-class.html",
+        "admin.html",
+        "4/15",
+        "website",
+        "redesign",
+        "review",
+        "min"
+      ]
+    },
+    "memory:memory/2026-05-03.md:66:101": {
+      "key": "memory:memory/2026-05-03.md:66:101",
+      "path": "memory/2026-05-03.md",
+      "startLine": 66,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "1. **Website redesign approval (18 days pending)** — Fully built at http://localhost:8090. Design, pricing, copy, CTAs all complete. **Status: PENDING REVIEW.** Approval → immediate deployment. **CRITICAL BLOCKER** for public launch. 2. **Mobile nav fix on bab-website** — Approved Friday night (hamburger left / logo right pattern). **Status: IMPLEMENTATION PENDING.** Ready to build. 3. **Member profile tier fix verification (10 days)** — Built Apr 21. **Status: UNCLEAR if deployed.** Confirm in /admin.html → Members tab for tier select + billing start fields. 4. **Reminder test verification (13 days)** — Jake booked Mon 4/14. 24-hour reminders should have fired Tue 4/15. **Status: PENDING",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47703352901001495,
+      "maxScore": 0.47703352901001495,
+      "firstRecalledAt": "2026-05-05T18:47:08.259Z",
+      "lastRecalledAt": "2026-05-05T18:47:08.259Z",
+      "queryHashes": [
+        "26130c50e1e7"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "bab-website",
+        "admin.html",
+        "4/14",
+        "24-hour",
+        "4/15",
+        "website",
+        "redesign",
+        "approval"
+      ]
+    },
+    "memory:memory/2026-05-01.md:23:57": {
+      "key": "memory:memory/2026-05-01.md:23:57",
+      "path": "memory/2026-05-01.md",
+      "startLine": 23,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "3. **Reminder test verification (11 days)** — Jake booked classes Mon 4/14 after cutoff. 24-hour reminders should have fired Tue 4/15. **Status: PENDING CONFIRMATION.** Critical for member notifications. 4. **Mobile screenshot feedback (19 days)** — Day nav pill rendering on mobile. **Status: PENDING.** Final UI polish. ## Proposed Priorities (Ranked by Impact) **TIER 1 — Critical Path (Quick Wins)** 1. **Website redesign review (10–15 min)** — http://localhost:8090. 16-day blocker. Approve → deploy → launch. **Highest leverage.** 2. **Verify member profile tier fix (2 min)** — Check /admin.html Members tab. 3. **Reminder test confirmation (2 min)** — Confirm Tue 4/15 reminders landed.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4557183740100984,
+      "maxScore": 0.4557183740100984,
+      "firstRecalledAt": "2026-05-05T18:47:08.259Z",
+      "lastRecalledAt": "2026-05-05T18:47:08.259Z",
+      "queryHashes": [
+        "26130c50e1e7"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "4/14",
+        "24-hour",
+        "4/15",
+        "16-day",
+        "admin.html",
+        "reminder",
+        "test",
+        "verification"
+      ]
+    },
+    "memory:memory/2026-05-03.md:163:181": {
+      "key": "memory:memory/2026-05-03.md:163:181",
+      "path": "memory/2026-05-03.md",
+      "startLine": 163,
+      "endLine": 181,
+      "source": "memory",
+      "snippet": "- Free class form verified working end-to-end (email confirms live) - Google Business Profile API OAuth flow initiated (pending final auth on Mac Mini) **Current blockers:** - Website redesign: Ready for DreamHost upload (Jake has steps, needs SFTP credentials) - Google OAuth: Waiting for auth completion on Mac Mini browser **State of open threads:** 1. **Website redesign** → APPROVED, ready for production deployment 2. **Mobile nav fix** → Approved, implementation pending 3. **Member profile tier fix** → Built, deployment status unclear 4. **Reminder test** → Pending confirmation **Tomorrow priorities:** 1. Deploy website to production (DreamHost) 2. Complete Google OAuth flow 3. Verify",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.741975622098434,
+      "maxScore": 0.46085659334118956,
+      "firstRecalledAt": "2026-05-06T14:30:13.590Z",
+      "lastRecalledAt": "2026-05-09T14:30:14.072Z",
+      "queryHashes": [
+        "302f9a03f3df",
+        "24c91babebe1",
+        "295ad19ce22c",
+        "6ceef9be7fe8"
+      ],
+      "recallDays": [
+        "2026-05-06",
+        "2026-05-08",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "end-to-end",
+        "free",
+        "class",
+        "form",
+        "verified",
+        "working",
+        "end",
+        "email"
+      ]
+    },
+    "memory:memory/2026-05-06.md:31:48": {
+      "key": "memory:memory/2026-05-06.md:31:48",
+      "path": "memory/2026-05-06.md",
+      "startLine": 31,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "1. **Deploy website redesign (15 min)** — Get DreamHost SFTP creds → upload to production → verify launch. **19-day blocker, highest impact.** 2. **Implement mobile nav (30–45 min)** — Hamburger pattern, unblocks free-class.html and secondary pages. **TIER 2 — High Impact, Low Effort** 3. **Monitor GBP drip submission** — Check if first photo (Bags109.jpg) approved. If yes, cron will auto-continue every 2 days. 4. **Set up GA4** — Post-website launch. Fresh property, configure events. --- ## Notes - Member growth: 281 (+11 from May 5, +35 from May 4). Strong trend. - Website redesign is the **single biggest blocker** — 19 days waiting. Unblocks public launch, free class signups, secon",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.44569938953991095,
+      "maxScore": 0.44569938953991095,
+      "firstRecalledAt": "2026-05-06T19:33:21.545Z",
+      "lastRecalledAt": "2026-05-06T19:33:21.545Z",
+      "queryHashes": [
+        "24c91babebe1"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "19-day",
+        "free-class.html",
+        "bags109.jpg",
+        "auto-continue",
+        "post-website",
+        "website",
+        "redesign",
+        "min"
+      ]
+    },
+    "memory:memory/2026-05-05.md:52:75": {
+      "key": "memory:memory/2026-05-05.md:52:75",
+      "path": "memory/2026-05-05.md",
+      "startLine": 52,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "- Root cause: gcFmt() generated local time strings without UTC conversion; Android Google Calendar app stricter than desktop/iOS - Fix: convert Pacific time → UTC → append `Z` suffix using Intl.DateTimeFormat for DST-aware offset - Fixed in: public/index.html + public/admin.html - Deployed to Railway ✅ (commit a20dd27 → 25f2bf4) ### Playwright / Browser Setup Note - playwright-core installed globally + copied to openclaw/node_modules - Gateway restarted — browser act/click/navigate now working via Puppeteer on port 18800 - Chrome debug launch: /tmp/chrome-bab profile, port 9222 (separate from openclaw managed browser on 18800) - For GBP uploads: use port 18800 (openclaw managed browser, alr",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8742974251382143,
+      "maxScore": 0.4470695164953038,
+      "firstRecalledAt": "2026-05-06T19:33:21.545Z",
+      "lastRecalledAt": "2026-05-08T05:51:20.801Z",
+      "queryHashes": [
+        "24c91babebe1",
+        "239773b39c9e"
+      ],
+      "recallDays": [
+        "2026-05-06",
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "gateway",
+        "desktop/ios",
+        "intl.datetimeformat",
+        "dst-aware",
+        "public/index.html",
+        "public/admin.html",
+        "playwright-core",
+        "openclaw/node-modules"
+      ]
+    },
+    "memory:memory/2026-05-06.md:1:38": {
+      "key": "memory:memory/2026-05-06.md:1:38",
+      "path": "memory/2026-05-06.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "# 2026-05-06 — Wednesday Morning Briefing (7:30 AM PT) ## Production Health ✅ - **bayareaboxing.net:** 301 (redirect) → healthy - **schedule.bayareaboxing.net:** 302 (redirect) → healthy - **Status:** All systems operational. No incidents. ## Backup Status ✅ - Backup ran successfully at 7:30 AM - **Members:** 281 (↑11 from yesterday) - **Bookings:** 200 - **Backups on file:** 27 (30-day retention) - **Stored:** Google Drive (BAB-Scheduler-Backups/) ## Open Threads (Carryover) 1. **Website redesign deployment (19 days pending)** — Full build complete, SEO locked, staff section updated. **Status: BLOCKED on DreamHost SFTP credentials.** Retrieve creds → deploy → launch. **CRITICAL BLOCKE",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4290676158260309,
+      "maxScore": 0.4290676158260309,
+      "firstRecalledAt": "2026-05-06T19:33:21.545Z",
+      "lastRecalledAt": "2026-05-06T19:33:21.545Z",
+      "queryHashes": [
+        "24c91babebe1"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "bayareaboxing.net",
+        "schedule.bayareaboxing.net",
+        "30-day",
+        "bab-scheduler-backups",
+        "wednesday",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-05-06.md:1:37": {
+      "key": "memory:memory/2026-05-06.md:1:37",
+      "path": "memory/2026-05-06.md",
+      "startLine": 1,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "# 2026-05-06 — Wednesday (Complete) ## Morning Briefing (7:30 AM PT) - **Production health:** All systems operational. bayareaboxing.net 301, schedule.bayareaboxing.net 302 - **Backup:** ✅ Ran at 7:30 AM. Members: 281 (+11 from yesterday). Backups on file: 27 (30-day retention) - **Priority:** Deploy website redesign (20-day blocker), then implement mobile nav + GA4 setup ## Afternoon Session — Website Deployed 🚀 (1:05 PM PT) **DreamHost SFTP Credentials** - Host: pdx1-shared-a2-10.dreamhost.com - Username: bayareaboxing - Password: Hazzy5500 (stored in workspace, not shared externally) - Path: /home/bayareaboxing/bayareaboxing.net **Deployment Complete ✅** - All HTML/CSS/JS/img files",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49641829861461534,
+      "maxScore": 0.49641829861461534,
+      "firstRecalledAt": "2026-05-07T21:22:45.676Z",
+      "lastRecalledAt": "2026-05-07T21:22:45.676Z",
+      "queryHashes": [
+        "e4074e2dda04"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "bayareaboxing.net",
+        "schedule.bayareaboxing.net",
+        "30-day",
+        "20-day",
+        "pdx1-shared-a2-10.dreamhost.com",
+        "html/css/js/img"
+      ]
+    },
+    "memory:memory/2026-05-06.md:27:61": {
+      "key": "memory:memory/2026-05-06.md:27:61",
+      "path": "memory/2026-05-06.md",
+      "startLine": 27,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "- Lightbox JS array updated to match new order ## Evening Session — Instructor & Features (6:00–11:00 PM PT) ### New Instructor: Devyn Lapidario ✅ - Photo: Devyn in BAB tank, in front of ring - Added to instructors section in index.html - Saved as `img/staff-devyn.jpg` - Bio written: BayFit Kickboxing coach framing - Deployed to DreamHost via SFTP ✅ ### Calendar Export Timezone Bug — Round 2 FIXED ✅ **Problem:** ICS exports had floating datetimes with no timezone → members' calendar apps interpreted times in device locale → wrong times or wrong days (reported by Roshaan for 4pm class) **Root cause:** `gcFmt()` computed Pacific offset from `new Date()` (today) instead of the actual class",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.1412862411928362,
+      "maxScore": 0.6854372633178186,
+      "firstRecalledAt": "2026-05-08T05:51:20.801Z",
+      "lastRecalledAt": "2026-05-08T05:57:26.989Z",
+      "queryHashes": [
+        "239773b39c9e",
+        "9ae706380547"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "index.html",
+        "img/staff-devyn.jpg",
+        "lightbox",
+        "array",
+        "updated",
+        "match",
+        "new",
+        "order"
+      ]
+    },
+    "memory:memory/2026-05-06.md:50:69": {
+      "key": "memory:memory/2026-05-06.md:50:69",
+      "path": "memory/2026-05-06.md",
+      "startLine": 50,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "**Added:** ⇄ Reschedule button to staff attendee rows (staff.html calendar view) **Modal includes:** - Dropdown of upcoming classes (next 14 days) with name, date, time, capacity remaining - Staff auth token passed to reschedule API - Inline confirmation + error messaging - Member receives confirmation email on reschedule (same flow as admin) **Deployed to Railway ✅** ## Summary **Shipped Today:** - Website redesign live after 20-day wait ✅ - Calendar timezone bug eliminated ✅ - New instructor added ✅ - Staff reschedule feature deployed ✅ **Status:** All critical blockers cleared. Website ready for GA4 setup + copy refinements (Jake to specify). Scheduler running stable.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.44485829165160845,
+      "maxScore": 0.44485829165160845,
+      "firstRecalledAt": "2026-05-08T05:51:20.801Z",
+      "lastRecalledAt": "2026-05-08T05:51:20.801Z",
+      "queryHashes": [
+        "239773b39c9e"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "staff.html",
+        "20-day",
+        "added",
+        "reschedule",
+        "button",
+        "staff",
+        "attendee",
+        "rows"
+      ]
+    },
+    "memory:memory/2026-04-26.md:113:141": {
+      "key": "memory:memory/2026-04-26.md:113:141",
+      "path": "memory/2026-04-26.md",
+      "startLine": 113,
+      "endLine": 141,
+      "source": "memory",
+      "snippet": "- Expected result after deploy: 4 Attended, 0 Upcoming, 5 Cancelled, 4/4 — all consistent ### Notes - Jake tested with his own profile (Miles Delacol) — Part-Time membership, billing cycle 2026-04-01 → 2026-05-01 - All fixes deployed to Railway (auto-deploy via GitHub main branch push) - No schema changes — all logic fixes only ### Freeze Bug Fix (8:20 PM) - Root cause: `/api/admin/members/:id/freeze` was calling `db.prepare()` but `db` is the wrapper module, not raw SQLite — instant 500 error - Fix: switched to `dbRaw` (better-sqlite3 direct instance), same pattern as rest of server.js - Also fixed: freeze UI now shows current expiry date, no confirm() dialog (was being blocked on mobile)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.547074957595131,
+      "maxScore": 0.547074957595131,
+      "firstRecalledAt": "2026-05-08T05:57:26.989Z",
+      "lastRecalledAt": "2026-05-08T05:57:26.989Z",
+      "queryHashes": [
+        "9ae706380547"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "4/4",
+        "part-time",
+        "auto-deploy",
+        "api/admin/members",
+        "id/freeze",
+        "db.prepare",
+        "better-sqlite3",
+        "server.js"
+      ]
+    },
+    "memory:memory/2026-05-01.md:51:61": {
+      "key": "memory:memory/2026-05-01.md:51:61",
+      "path": "memory/2026-05-01.md",
+      "startLine": 51,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "- Member profile tier fix verification: PENDING (needs /admin.html check) - Reminder test confirmation: PENDING (validate Tue 4/15 sends) - Mobile screenshot feedback: PENDING (final UI polish) **Next Steps for Tomorrow:** - Follow up on website redesign decision (approval = immediate deploy) - Verify member profile and reminder features if not yet confirmed - Prepare any outstanding member communications or social content **Note:** Briefing structure working well. Continue daily 7:30 AM production health checks + priority ranking for morning deliverables.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4120597584567915,
+      "maxScore": 0.4120597584567915,
+      "firstRecalledAt": "2026-05-08T14:30:16.989Z",
+      "lastRecalledAt": "2026-05-08T14:30:16.989Z",
+      "queryHashes": [
+        "295ad19ce22c"
+      ],
+      "recallDays": [
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "admin.html",
+        "4/15",
+        "member",
+        "profile",
+        "tier",
+        "fix",
+        "verification",
+        "pending"
+      ]
+    },
+    "memory:memory/2026-05-08.md:1:33": {
+      "key": "memory:memory/2026-05-08.md:1:33",
+      "path": "memory/2026-05-08.md",
+      "startLine": 1,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "# 2026-05-08 — Friday (Morning Briefing) ## Production Health ✅ - **bayareaboxing.net:** 200 OK (redesign live, running stable) - **schedule.bayareaboxing.net:** 200 OK (all systems operational) ## Backup Status ✅ - **Members:** 291 (+6 from yesterday) - **Bookings:** 200 - **Backups:** 31 on file (30-day retention, running clean) ## Open Threads from Yesterday - **GA4 Setup** — Website redesign deployed but analytics not yet configured. Awaiting Jake approval. - **Website Copy Review** — Lead-gen copy changes need Jake approval. - **Social Content Calendar** — Not yet started; schedule for planning. - **Member Retention Check** — Data available; deeper analysis pending. ## Priorities (T",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4899821862863819,
+      "maxScore": 0.4899821862863819,
+      "firstRecalledAt": "2026-05-09T14:30:14.072Z",
+      "lastRecalledAt": "2026-05-09T14:30:14.072Z",
+      "queryHashes": [
+        "6ceef9be7fe8"
+      ],
+      "recallDays": [
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "bayareaboxing.net",
+        "schedule.bayareaboxing.net",
+        "30-day",
+        "lead-gen",
+        "friday",
+        "morning"
+      ]
+    }
+  }
+}
