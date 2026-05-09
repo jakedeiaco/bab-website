@@ -411,6 +411,7 @@ h1, h2, h3, .pricing-badge {
   display: block;
   border-radius: 4px;
   overflow: hidden;
+  clip-path: inset(0 round 4px);
   aspect-ratio: 4 / 3;
   cursor: pointer;
   text-decoration: none;
