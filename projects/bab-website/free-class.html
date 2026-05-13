@@ -29,6 +29,54 @@
       margin: 0 auto;
       line-height: 1.6;
     }
+
+    /* Step indicator */
+    .step-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .step-dot {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .step-dot .dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 2px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #555;
+      flex-shrink: 0;
+    }
+    .step-dot.active .dot {
+      background: #C0392B;
+      border-color: #C0392B;
+      color: #fff;
+    }
+    .step-dot.active { color: #fff; }
+    .step-dot.done .dot {
+      background: #2a6a2a;
+      border-color: #2a6a2a;
+      color: #fff;
+    }
+    .step-divider {
+      width: 40px;
+      height: 1px;
+      background: #333;
+    }
     .red { color: #C0392B; }
 
     .free-class-body {
@@ -284,10 +332,23 @@
 
       <div class="error-msg" id="error-msg"></div>
 
-      <form id="free-class-form">
+      <!-- STEP INDICATOR -->
+      <div class="step-indicator" id="step-indicator">
+        <div class="step-dot active" id="step-dot-1">
+          <div class="dot">1</div>
+          <span>Your Info</span>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step-dot" id="step-dot-2">
+          <div class="dot">2</div>
+          <span>Waiver</span>
+        </div>
+      </div>
 
-        <!-- SECTION 1: Contact Info -->
-        <div class="section-label">Your Information</div>
+      <!-- STEP 1: Lead capture -->
+      <form id="lead-form">
+
+        <div class="section-label" style="margin-top:0;">Your Information</div>
 
         <div class="form-row">
           <div class="form-group">
@@ -305,53 +366,26 @@
           <input type="email" id="email" name="email" placeholder="you@email.com" required />
         </div>
 
-        <div class="form-row">
-          <div class="form-group">
-            <label for="phone">Phone <span class="req">*</span></label>
-            <input type="tel" id="phone" name="phone" placeholder="(650) 555-0000" required />
-          </div>
-          <div class="form-group">
-            <label for="occupation">Occupation <span class="req">*</span></label>
-            <input type="text" id="occupation" name="occupation" placeholder="Engineer" required />
+        <div class="form-group">
+          <label for="phone">Phone <span class="req">*</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="(650) 555-0000" required />
+        </div>
+
+        <div class="section-label">What Brings You In?</div>
+
+        <div class="form-group">
+          <label>Interested in <span class="req">*</span> <span style="color:#666;font-weight:400;text-transform:none;">(select all that apply)</span></label>
+          <div class="check-group" id="interest-group">
+            <label><input type="checkbox" name="interest" value="Boxing" /> Boxing</label>
+            <label><input type="checkbox" name="interest" value="Muay Thai Kickboxing" /> Muay Thai</label>
+            <label><input type="checkbox" name="interest" value="Brazilian Jiu-Jitsu" /> BJJ</label>
+            <label><input type="checkbox" name="interest" value="Strength Training" /> Strength</label>
+            <label><input type="checkbox" name="interest" value="Not sure yet" /> Not sure</label>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="street">Street Address <span class="req">*</span></label>
-          <input type="text" id="street" name="street" placeholder="123 Main St" required />
-        </div>
-
-        <div class="form-row-3">
-          <div class="form-group">
-            <label for="city">City <span class="req">*</span></label>
-            <input type="text" id="city" name="city" placeholder="Belmont" required />
-          </div>
-          <div class="form-group">
-            <label for="state">State</label>
-            <input type="text" id="state" name="state" placeholder="CA" maxlength="2" />
-          </div>
-          <div class="form-group">
-            <label for="zip">ZIP <span class="req">*</span></label>
-            <input type="text" id="zip" name="zip" placeholder="94002" required />
-          </div>
-        </div>
-
-        <!-- SECTION 2: Training Background -->
-        <div class="section-label">Training Background</div>
-
-        <div class="form-group">
-          <label>Have you trained in any of the following? <span style="color:#666;font-weight:400;text-transform:none;">(select all that apply)</span></label>
-          <div class="check-group" id="experience-group">
-            <label><input type="checkbox" name="prior_experience" value="Boxing" /> Boxing</label>
-            <label><input type="checkbox" name="prior_experience" value="Kickboxing" /> Kickboxing</label>
-            <label><input type="checkbox" name="prior_experience" value="Brazilian Jiu-Jitsu" /> Brazilian Jiu-Jitsu (BJJ)</label>
-            <label><input type="checkbox" name="prior_experience" value="MMA" /> MMA</label>
-            <label><input type="checkbox" name="prior_experience" value="None" /> None / New to combat sports</label>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>What results are you looking for? <span class="req">*</span> <span style="color:#666;font-weight:400;text-transform:none;">(select all that apply)</span></label>
+          <label>What are you looking for? <span style="color:#666;font-weight:400;text-transform:none;">(optional)</span></label>
           <div class="check-group" id="goals-group">
             <label><input type="checkbox" name="goals" value="Stamina" /> Stamina</label>
             <label><input type="checkbox" name="goals" value="Strength" /> Strength</label>
@@ -361,91 +395,49 @@
           </div>
         </div>
 
-        <div class="form-group">
-          <label>Interested in <span class="req">*</span> <span style="color:#666;font-weight:400;text-transform:none;">(select all that apply)</span></label>
-          <div class="check-group" id="interest-group">
-            <label><input type="checkbox" name="interest" value="Boxing" /> Boxing</label>
-            <label><input type="checkbox" name="interest" value="Muay Thai Kickboxing" /> Muay Thai</label>
-            <label><input type="checkbox" name="interest" value="Brazilian Jiu-Jitsu" /> BJJ</label>
-            <label><input type="checkbox" name="interest" value="Strength Training" /> Strength</label>
-            <label><input type="checkbox" name="interest" value="Kids Program" /> Kids</label>
-            <label><input type="checkbox" name="interest" value="Not sure yet" /> Not sure</label>
-          </div>
-        </div>
+        <button type="submit" class="btn-submit" id="lead-submit-btn">Continue &rarr;</button>
+        <p class="form-note">Step 1 of 2 &mdash; takes less than 60 seconds total.</p>
 
-        <div class="form-row">
-          <div class="form-group">
-            <label for="time_since_shape">How long since you were in ideal shape? <span class="req">*</span></label>
-            <input type="text" id="time_since_shape" name="time_since_shape" placeholder="e.g. 2 years" required />
-          </div>
-          <div class="form-group">
-            <label for="time_thinking">How long have you been thinking about starting? <span class="req">*</span></label>
-            <input type="text" id="time_thinking" name="time_thinking" placeholder="e.g. 6 months" required />
-          </div>
-        </div>
+      </form>
 
-        <div class="form-group">
-          <label>Any physical or emotional conditions that could affect participation? <span class="req">*</span></label>
-          <div class="radio-group">
-            <label><input type="radio" name="conditions" value="Yes" required /> Yes</label>
-            <label><input type="radio" name="conditions" value="No" /> No</label>
-          </div>
-        </div>
+      <!-- STEP 2: Liability waiver (hidden until step 1 complete) -->
+      <div id="waiver-step" style="display:none;">
 
-        <div class="form-group">
-          <label>What has kept you from starting in the past?</label>
-          <div class="check-group">
-            <label><input type="checkbox" name="barriers" value="Time" /> Time</label>
-            <label><input type="checkbox" name="barriers" value="Money" /> Money</label>
-            <label><input type="checkbox" name="barriers" value="Facilities" /> Facilities</label>
-            <label><input type="checkbox" name="barriers" value="Procrastination" /> Procrastination</label>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Do you plan to stay in the area? <span class="req">*</span></label>
-          <div class="radio-group">
-            <label><input type="radio" name="staying_in_area" value="Yes" required /> Yes</label>
-            <label><input type="radio" name="staying_in_area" value="No" /> No</label>
-          </div>
-        </div>
-
-        <!-- SECTION 3: Liability Waiver -->
-        <div class="section-label">Liability Waiver</div>
+        <p style="color:#aaa;font-size:0.95rem;line-height:1.6;margin-bottom:24px;">Almost there. Please read and sign the liability waiver below to complete your free class request.</p>
 
         <div class="waiver-box">
           <strong style="color:#ccc;">GUEST ASSUMPTION AND RELEASE OF LIABILITY</strong><br><br>
-          Boxing and kickboxing courses offered by Bay Area Boxing of Belmont, CA and its owners, employees, instructors (collectively "Fitness Center") will involve sparring and physical contact with other individuals and/or heavy bags, which may result in personal injury. Other programs offered by the fitness center, including weight lifting, martial arts, aerobics, wrestling, cycling, and other events also present a risk of personal injury to the participant (yourself).<br><br>
+          Boxing and kickboxing courses offered by Bay Area Boxing of Belmont, CA and its owners, employees, instructors (collectively &ldquo;Fitness Center&rdquo;) will involve sparring and physical contact with other individuals and/or heavy bags, which may result in personal injury. Other programs offered by the fitness center, including weight lifting, martial arts, aerobics, wrestling, cycling, and other events also present a risk of personal injury to the participant (yourself).<br><br>
           By signing below, I am acknowledging my intent to release, waive, and discharge the Fitness Center from any claim or liability for injury to my person, my children, or other minor persons for whom I am responsible, hereafter occurring at or around the Fitness Center.<br><br>
           Accordingly, I, for myself and my children, and for my or their successors, personal representatives, and assigns hereby (1) release and waive any claims and causes of action against the Fitness Center for personal injury, loss and/or consequential damage to me, my children, or other persons for whom I am responsible, resulting from future passive or active negligence of the Fitness Center in operation, management or supervision of the Fitness Center, and (2) agree to indemnify, defend and hold the Fitness Center free and harmless from any cost, loss or liability arising out of any injury to me, my children, or other persons for whom I am responsible in or around the Fitness Center proximity resulting from negligence of the Fitness Center.
         </div>
 
         <div class="waiver-agree">
-          <input type="checkbox" id="waiver_agree" name="waiver_agree" required />
+          <input type="checkbox" id="waiver_agree" />
           <span>I have read and agree to the Guest Assumption and Release of Liability above. I understand that participation in boxing, kickboxing, and other fitness activities involves risk of injury.</span>
         </div>
 
         <div class="form-group">
           <label>Your Signature <span class="req">*</span></label>
-          <p style="font-size:0.8rem;color:#666;margin-bottom:10px;">Draw your signature below. By signing you agree to the terms above.</p>
+          <p style="font-size:0.8rem;color:#666;margin-bottom:10px;">Draw your signature below.</p>
           <canvas id="sig-canvas" width="520" height="120" style="background:#111;border:1px solid #333;border-radius:6px;cursor:crosshair;touch-action:none;width:100%;display:block;"></canvas>
           <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
             <span style="font-size:0.75rem;color:#555;">Sign with mouse or finger</span>
             <button type="button" id="clear-sig" style="background:none;border:1px solid #444;color:#888;border-radius:4px;padding:4px 12px;font-size:0.8rem;cursor:pointer;">Clear</button>
           </div>
-          <input type="hidden" id="signature" name="signature" />
         </div>
 
         <div class="form-group">
           <label for="signed_date">Date <span class="req">*</span></label>
-          <input type="text" id="signed_date" name="signed_date" readonly style="color:#888;cursor:default;" />
+          <input type="text" id="signed_date" readonly style="color:#888;cursor:default;" />
         </div>
 
-        <button type="submit" class="btn-submit" id="submit-btn">Submit &amp; Claim My Free Class →</button>
-        <p class="form-note">We'll contact you within 24 hours to set up your free class.</p>
+        <button type="button" class="btn-submit" id="waiver-submit-btn">Sign &amp; Complete My Free Class &rarr;</button>
+        <p class="form-note">We&rsquo;ll contact you within 24 hours to set up your first session.</p>
 
-      </form>
+      </div>
 
+      <!-- SUCCESS STATE -->
       <!-- SUCCESS STATE -->
       <div class="success-state" id="success-state">
         <div class="icon">🥊</div>
@@ -477,163 +469,144 @@
   </footer>
 
   <script>
-    // Auto-fill today's date
-    const today = new Date().toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' });
-    document.getElementById('signed_date').value = today;
-
-    // ── Signature canvas ──────────────────────────────────────────
-    const canvas = document.getElementById('sig-canvas');
-    const ctx = canvas.getContext('2d');
-    let drawing = false;
-    let sigEmpty = true;
-
-    function resizeCanvas() {
-      const data = canvas.toDataURL();
-      canvas.width = canvas.offsetWidth;
-      canvas.height = 120;
-      ctx.strokeStyle = '#fff';
-      ctx.lineWidth = 2;
-      ctx.lineCap = 'round';
-      ctx.lineJoin = 'round';
-      const img = new Image();
-      img.src = data;
-      img.onload = () => ctx.drawImage(img, 0, 0);
-    }
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
-
-    function getPos(e) {
-      const r = canvas.getBoundingClientRect();
-      const src = e.touches ? e.touches[0] : e;
-      return { x: src.clientX - r.left, y: src.clientY - r.top };
-    }
-    function startDraw(e) { e.preventDefault(); drawing = true; const p = getPos(e); ctx.beginPath(); ctx.moveTo(p.x, p.y); }
-    function draw(e) { if (!drawing) return; e.preventDefault(); sigEmpty = false; const p = getPos(e); ctx.lineTo(p.x, p.y); ctx.stroke(); }
-    function stopDraw() { drawing = false; }
-
-    canvas.addEventListener('mousedown', startDraw);
-    canvas.addEventListener('mousemove', draw);
-    canvas.addEventListener('mouseup', stopDraw);
-    canvas.addEventListener('mouseleave', stopDraw);
-    canvas.addEventListener('touchstart', startDraw, { passive: false });
-    canvas.addEventListener('touchmove', draw, { passive: false });
-    canvas.addEventListener('touchend', stopDraw);
-
-    document.getElementById('clear-sig').addEventListener('click', () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      sigEmpty = true;
-      document.getElementById('signature').value = '';
-    });
-
-    // ── Form submit ───────────────────────────────────────────────
-    const form = document.getElementById('free-class-form');
-    const successState = document.getElementById('success-state');
-    const submitBtn = document.getElementById('submit-btn');
+    const API = 'https://bab-scheduler-production-b000.up.railway.app';
     const errorMsg = document.getElementById('error-msg');
+    const successState = document.getElementById('success-state');
+    let leadData = {};
 
-    form.addEventListener('submit', async (e) => {
+    function showError(msg, scrollTarget) {
+      errorMsg.textContent = msg;
+      errorMsg.style.display = 'block';
+      (scrollTarget || errorMsg).scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    function clearError() { errorMsg.style.display = 'none'; }
+
+    // ── STEP 1: Lead form ───────────────────────────────────────
+    const leadForm = document.getElementById('lead-form');
+    const leadSubmitBtn = document.getElementById('lead-submit-btn');
+
+    leadForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      errorMsg.style.display = 'none';
+      clearError();
 
-      // Validate waiver checkbox
-      if (!form.waiver_agree.checked) {
-        errorMsg.textContent = 'Please read and agree to the liability waiver before submitting.';
-        errorMsg.style.display = 'block';
-        form.waiver_agree.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        return;
-      }
-
-      // Validate signature
-      if (sigEmpty) {
-        errorMsg.textContent = 'Please sign the waiver before submitting.';
-        errorMsg.style.display = 'block';
-        canvas.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        return;
-      }
-
-      // Validate at least one interest selected
-      const interests = [...form.querySelectorAll('input[name="interest"]:checked')].map(el => el.value);
+      const interests = [...leadForm.querySelectorAll('input[name="interest"]:checked')].map(el => el.value);
       if (interests.length === 0) {
-        errorMsg.textContent = 'Please select at least one program you\'re interested in.';
-        errorMsg.style.display = 'block';
+        showError("Please select at least one program you're interested in.");
         return;
       }
 
-      // Validate at least one goal selected
-      const goals = [...form.querySelectorAll('input[name="goals"]:checked')].map(el => el.value);
-      if (goals.length === 0) {
-        errorMsg.textContent = 'Please select at least one goal.';
-        errorMsg.style.display = 'block';
-        return;
-      }
+      const goals = [...leadForm.querySelectorAll('input[name="goals"]:checked')].map(el => el.value);
 
-      // Save signature as data URL into hidden input
-      document.getElementById('signature').value = canvas.toDataURL('image/png');
-
-      // Collect multi-select fields
-      const barriers = [...form.querySelectorAll('input[name="barriers"]:checked')].map(el => el.value);
-      const experience = [...form.querySelectorAll('input[name="prior_experience"]:checked')].map(el => el.value);
-
-      const data = {
-        first_name: form.first_name.value.trim(),
-        last_name: form.last_name.value.trim(),
-        email: form.email.value.trim(),
-        phone: form.phone.value.trim(),
-        occupation: form.occupation.value.trim(),
-        street: form.street.value.trim(),
-        city: form.city.value.trim(),
-        state: form.state.value.trim(),
-        zip: form.zip.value.trim(),
-        prior_experience: experience.join(', ') || 'None',
-        goals: goals.join(', '),
+      leadData = {
+        first_name: leadForm.first_name.value.trim(),
+        last_name: leadForm.last_name.value.trim(),
+        email: leadForm.email.value.trim(),
+        phone: leadForm.phone.value.trim(),
         interest: interests.join(', '),
-        time_since_shape: form.time_since_shape.value.trim(),
-        time_thinking: form.time_thinking.value.trim(),
-        conditions: form.conditions.value,
-        barriers: barriers.join(', ') || 'None selected',
-        staying_in_area: form.staying_in_area.value,
-        waiver_agreed: true,
-        signature: document.getElementById('signature').value,
-        signed_date: form.signed_date.value,
-        signed_ip_ts: new Date().toISOString()
+        goals: goals.join(', ') || undefined
       };
 
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Submitting…';
+      leadSubmitBtn.disabled = true;
+      leadSubmitBtn.textContent = 'Saving…';
 
       try {
-        const res = await fetch('https://bab-scheduler-production-b000.up.railway.app/api/free-class-lead', {
+        const res = await fetch(`${API}/api/free-class-lead`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
+          body: JSON.stringify(leadData)
         });
-
         const result = await res.json();
+        if (!res.ok || !result.success) throw new Error(result.error || 'Something went wrong.');
 
-        if (res.ok && result.success) {
-          form.style.display = 'none';
-          successState.style.display = 'block';
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        } else {
-          throw new Error(result.error || 'Something went wrong. Please try again.');
-        }
+        leadForm.style.display = 'none';
+        document.getElementById('step-dot-1').classList.remove('active');
+        document.getElementById('step-dot-1').classList.add('done');
+        document.getElementById('step-dot-1').querySelector('.dot').textContent = '✓';
+        document.getElementById('step-dot-2').classList.add('active');
+        document.getElementById('waiver-step').style.display = 'block';
+        initCanvas();
+        document.getElementById('signed_date').value = new Date().toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       } catch (err) {
-        errorMsg.textContent = err.message;
-        errorMsg.style.display = 'block';
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Submit & Claim My Free Class →';
-        errorMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        showError(err.message);
+        leadSubmitBtn.disabled = false;
+        leadSubmitBtn.textContent = 'Continue →';
       }
     });
-    // ── Hamburger nav
+
+    // ── Signature canvas ───────────────────────────────────────
+    let sigEmpty = true, canvas, ctx;
+
+    function initCanvas() {
+      canvas = document.getElementById('sig-canvas');
+      ctx = canvas.getContext('2d');
+      sigEmpty = true;
+      function resizeCanvas() {
+        const data = canvas.toDataURL();
+        canvas.width = canvas.offsetWidth;
+        canvas.height = 120;
+        ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+        const img = new Image(); img.src = data; img.onload = () => ctx.drawImage(img, 0, 0);
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+      function getPos(e) {
+        const r = canvas.getBoundingClientRect(), src = e.touches ? e.touches[0] : e;
+        return { x: src.clientX - r.left, y: src.clientY - r.top };
+      }
+      let drawing = false;
+      canvas.addEventListener('mousedown', (e) => { e.preventDefault(); drawing = true; const p = getPos(e); ctx.beginPath(); ctx.moveTo(p.x, p.y); });
+      canvas.addEventListener('mousemove', (e) => { if (!drawing) return; e.preventDefault(); sigEmpty = false; const p = getPos(e); ctx.lineTo(p.x, p.y); ctx.stroke(); });
+      canvas.addEventListener('mouseup', () => { drawing = false; });
+      canvas.addEventListener('mouseleave', () => { drawing = false; });
+      canvas.addEventListener('touchstart', (e) => { e.preventDefault(); drawing = true; const p = getPos(e); ctx.beginPath(); ctx.moveTo(p.x, p.y); }, { passive: false });
+      canvas.addEventListener('touchmove', (e) => { if (!drawing) return; e.preventDefault(); sigEmpty = false; const p = getPos(e); ctx.lineTo(p.x, p.y); ctx.stroke(); }, { passive: false });
+      canvas.addEventListener('touchend', () => { drawing = false; });
+      document.getElementById('clear-sig').addEventListener('click', () => { ctx.clearRect(0, 0, canvas.width, canvas.height); sigEmpty = true; });
+    }
+
+    // ── STEP 2: Waiver submit ──────────────────────────────────
+    document.getElementById('waiver-submit-btn').addEventListener('click', async () => {
+      clearError();
+      if (!document.getElementById('waiver_agree').checked) {
+        showError('Please read and agree to the liability waiver.', document.getElementById('waiver_agree'));
+        return;
+      }
+      if (sigEmpty) { showError('Please sign the waiver before submitting.', canvas); return; }
+
+      const waiverData = {
+        first_name: leadData.first_name, last_name: leadData.last_name, email: leadData.email,
+        waiver_agreed: true, signature: canvas.toDataURL('image/png'),
+        signed_date: document.getElementById('signed_date').value,
+        signed_at: new Date().toISOString()
+      };
+
+      const btn = document.getElementById('waiver-submit-btn');
+      btn.disabled = true; btn.textContent = 'Submitting…';
+
+      try {
+        const res = await fetch(`${API}/api/free-class-waiver`, {
+          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(waiverData)
+        });
+        const result = await res.json();
+        if (!res.ok || !result.success) throw new Error(result.error || 'Something went wrong.');
+        document.getElementById('step-indicator').style.display = 'none';
+        document.getElementById('waiver-step').style.display = 'none';
+        successState.style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } catch (err) {
+        showError(err.message);
+        btn.disabled = false; btn.textContent = 'Sign & Complete My Free Class →';
+      }
+    });
+
+    // ── Hamburger nav ─────────────────────────────────────────────
     const hamburger = document.getElementById('hamburger');
     const navLinks  = document.getElementById('nav-links');
     const navBackdrop = document.getElementById('nav-backdrop');
     function closeNav() {
-      navLinks.classList.remove('open');
-      navBackdrop.classList.remove('open');
-      hamburger.classList.remove('active');
-      hamburger.setAttribute('aria-expanded', false);
+      navLinks.classList.remove('open'); navBackdrop.classList.remove('open');
+      hamburger.classList.remove('active'); hamburger.setAttribute('aria-expanded', false);
     }
     hamburger.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('open');
@@ -644,6 +617,7 @@
     navBackdrop.addEventListener('click', closeNav);
     navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', closeNav));
   </script>
+
 
 </body>
 </html>
