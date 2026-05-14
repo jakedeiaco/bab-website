@@ -307,6 +307,15 @@ h1, h2, h3, .pricing-badge {
   margin-top: 0.75rem;
 }
 
+.hero-location {
+  font-size: 0.85rem;
+  color: #C0392B;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 8px 0 0;
+}
+
 .hero-sub {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   color: rgba(255,255,255,0.82);
