@@ -182,6 +182,23 @@
       margin-bottom: 0;
     }
     .radio-group input, .check-group input { margin: 0; accent-color: #C0392B; }
+
+    /* Health screening questions */
+    .health-question {
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+    }
+    .health-question > span {
+      display: block;
+      color: #ccc;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    .health-question strong { color: #fff; }
     .radio-group label:has(input:checked),
     .check-group label:has(input:checked) {
       border-color: #C0392B;
@@ -403,6 +420,23 @@
           </div>
         </div>
 
+        <div class="form-group">
+          <label for="heard_from">How did you hear about us? <span class="req">*</span></label>
+          <select id="heard_from" name="heard_from" required>
+            <option value="" disabled selected>Select one&hellip;</option>
+            <option value="Google Search">Google Search</option>
+            <option value="Google Maps">Google Maps</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Yelp">Yelp</option>
+            <option value="Word of mouth / referral">Word of mouth / referral</option>
+            <option value="Drive-by / walked by">Drive-by / walked by</option>
+            <option value="Reddit">Reddit</option>
+            <option value="Apple Maps">Apple Maps</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
         <button type="submit" class="btn-submit" id="lead-submit-btn">Continue &rarr;</button>
         <p class="form-note">Step 1 of 2 &mdash; takes less than 60 seconds total.</p>
 
@@ -411,7 +445,103 @@
       <!-- STEP 2: Liability waiver (hidden until step 1 complete) -->
       <div id="waiver-step" style="display:none;">
 
-        <p style="color:#aaa;font-size:0.95rem;line-height:1.6;margin-bottom:24px;">Almost there. Please read and sign the liability waiver below to complete your free class request.</p>
+        <p style="color:#aaa;font-size:0.95rem;line-height:1.6;margin-bottom:24px;">Almost there. Just a few quick details before you sign — then you're all set.</p>
+
+        <div class="section-label" style="margin-top:0;">Home Address</div>
+
+        <div class="form-group">
+          <label for="street">Street Address <span class="req">*</span></label>
+          <input type="text" id="street" name="street" placeholder="123 Main St" required />
+        </div>
+        <div class="form-row-3">
+          <div class="form-group">
+            <label for="city">City <span class="req">*</span></label>
+            <input type="text" id="city" name="city" placeholder="Belmont" required />
+          </div>
+          <div class="form-group">
+            <label for="state">State <span class="req">*</span></label>
+            <input type="text" id="state" name="state" placeholder="CA" maxlength="2" required />
+          </div>
+          <div class="form-group">
+            <label for="zip">Zip <span class="req">*</span></label>
+            <input type="text" id="zip" name="zip" placeholder="94002" maxlength="10" required />
+          </div>
+        </div>
+
+        <div class="section-label">Personal Details</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="dob">Date of Birth <span class="req">*</span></label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+          <div class="form-group">
+            <label for="fitness_level">Current Fitness Level</label>
+            <select id="fitness_level" name="fitness_level">
+              <option value="" disabled selected>Select one&hellip;</option>
+              <option value="Beginner — mostly sedentary">Beginner — mostly sedentary</option>
+              <option value="Moderate — some regular activity">Moderate — some regular activity</option>
+              <option value="Active — work out regularly">Active — work out regularly</option>
+              <option value="Athlete — train competitively">Athlete — train competitively</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-label">Emergency Contact</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="emergency_name">Name <span class="req">*</span></label>
+            <input type="text" id="emergency_name" name="emergency_name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="emergency_phone">Phone <span class="req">*</span></label>
+            <input type="tel" id="emergency_phone" name="emergency_phone" placeholder="(650) 555-0000" required />
+          </div>
+        </div>
+
+        <div class="section-label">Health Screening</div>
+
+        <p style="color:#666;font-size:0.82rem;margin:-8px 0 16px;">Please answer honestly. This helps us make sure your first session is safe and appropriate for you.</p>
+
+        <div class="health-question">
+          <span>Has a doctor ever told you <strong>not to exercise</strong> or engage in strenuous physical activity?</span>
+          <div class="radio-group">
+            <label><input type="radio" name="q_doctor_restriction" value="No" required /> No</label>
+            <label><input type="radio" name="q_doctor_restriction" value="Yes" /> Yes</label>
+          </div>
+        </div>
+
+        <div class="health-question">
+          <span>Do you have a <strong>heart condition, high blood pressure, or diabetes</strong>?</span>
+          <div class="radio-group">
+            <label><input type="radio" name="q_heart" value="No" required /> No</label>
+            <label><input type="radio" name="q_heart" value="Yes" /> Yes</label>
+          </div>
+        </div>
+
+        <div class="health-question">
+          <span>Do you have any <strong>current injuries or physical limitations</strong> we should know about?</span>
+          <div class="radio-group">
+            <label><input type="radio" name="q_injuries" value="No" required /> No</label>
+            <label><input type="radio" name="q_injuries" value="Yes" /> Yes</label>
+          </div>
+        </div>
+
+        <div class="health-question">
+          <span>Are you taking any <strong>medications that may affect your ability to exercise</strong>?</span>
+          <div class="radio-group">
+            <label><input type="radio" name="q_medications" value="No" required /> No</label>
+            <label><input type="radio" name="q_medications" value="Yes" /> Yes</label>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top:16px;">
+          <label for="health_notes">Additional Health Notes <span style="color:#666;font-weight:400;text-transform:none;">(optional)</span></label>
+          <textarea id="health_notes" name="health_notes" placeholder="Any injuries, conditions, or anything else you want us to know before your first class…"></textarea>
+        </div>
+
+        <div class="section-label">Liability Waiver</div>
 
         <div class="waiver-box">
           <strong style="color:#ccc;">GUEST ASSUMPTION AND RELEASE OF LIABILITY</strong><br><br>
@@ -511,7 +641,8 @@
         email: leadForm.email.value.trim(),
         phone: leadForm.phone.value.trim(),
         interest: interests.join(', '),
-        goals: goals.join(', ') || undefined
+        goals: goals.join(', ') || undefined,
+        heard_from: leadForm.heard_from.value || undefined
       };
 
       leadSubmitBtn.disabled = true;
@@ -576,6 +707,25 @@
     // ── STEP 2: Waiver submit ──────────────────────────────────
     document.getElementById('waiver-submit-btn').addEventListener('click', async () => {
       clearError();
+
+      // Validate required waiver-step fields
+      const requiredIds = ['street', 'city', 'state', 'zip', 'dob', 'emergency_name', 'emergency_phone'];
+      for (const id of requiredIds) {
+        const el = document.getElementById(id);
+        if (!el.value.trim()) {
+          showError('Please fill in all required fields.', el);
+          el.focus();
+          return;
+        }
+      }
+      const healthQs = ['q_doctor_restriction', 'q_heart', 'q_injuries', 'q_medications'];
+      for (const name of healthQs) {
+        if (!document.querySelector(`input[name="${name}"]:checked`)) {
+          showError('Please answer all health screening questions.');
+          document.querySelector(`input[name="${name}"]`).scrollIntoView({ behavior: 'smooth', block: 'center' });
+          return;
+        }
+      }
       if (!document.getElementById('waiver_agree').checked) {
         showError('Please read and agree to the liability waiver.', document.getElementById('waiver_agree'));
         return;
@@ -584,6 +734,24 @@
 
       const waiverData = {
         first_name: leadData.first_name, last_name: leadData.last_name, email: leadData.email,
+        // Address
+        street: document.getElementById('street').value.trim(),
+        city: document.getElementById('city').value.trim(),
+        state: document.getElementById('state').value.trim().toUpperCase(),
+        zip: document.getElementById('zip').value.trim(),
+        // Personal
+        dob: document.getElementById('dob').value,
+        fitness_level: document.getElementById('fitness_level').value || undefined,
+        // Emergency contact
+        emergency_name: document.getElementById('emergency_name').value.trim(),
+        emergency_phone: document.getElementById('emergency_phone').value.trim(),
+        // Health screening
+        q_doctor_restriction: document.querySelector('input[name="q_doctor_restriction"]:checked').value,
+        q_heart: document.querySelector('input[name="q_heart"]:checked').value,
+        q_injuries: document.querySelector('input[name="q_injuries"]:checked').value,
+        q_medications: document.querySelector('input[name="q_medications"]:checked').value,
+        health_notes: document.getElementById('health_notes').value.trim() || undefined,
+        // Waiver
         waiver_agreed: true, signature: canvas.toDataURL('image/png'),
         signed_date: document.getElementById('signed_date').value,
         signed_at: new Date().toISOString()
