@@ -87,6 +87,63 @@ h1, h2, h3, .pricing-badge {
 .cta-band    { background: #C0392B; padding: 48px 0; }
 
 /* ============================
+   QUICK INFO STRIP
+   ============================ */
+.quick-info-strip {
+  background: #111;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding: 28px 0 20px;
+}
+.quick-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.quick-info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 14px 16px;
+  transition: border-color 0.15s;
+}
+.quick-info-item:hover { border-color: #C0392B; }
+.quick-info-item.qi-cta { border-color: #C0392B33; }
+.qi-icon { font-size: 1.6rem; flex-shrink: 0; }
+.qi-label { font-size: 0.92rem; font-weight: 700; color: #fff; margin-bottom: 2px; }
+.qi-sub   { font-size: 0.78rem; color: #888; }
+.qi-link  { color: #C0392B; text-decoration: none; font-weight: 600; }
+.qi-link:hover { color: #e84040; }
+.quick-info-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #666;
+  justify-content: center;
+}
+.qi-divider { color: #333; }
+@media (max-width: 768px) {
+  .quick-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .quick-info-meta {
+    font-size: 0.76rem;
+    gap: 6px;
+  }
+}
+@media (max-width: 480px) {
+  .quick-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================
    BUTTONS
    ============================ */
 
