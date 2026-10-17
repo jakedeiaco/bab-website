@@ -115,7 +115,7 @@ h1, h2, h3, .pricing-badge {
 .quick-info-item.qi-cta { border-color: #C0392B33; }
 .qi-icon { font-size: 1.6rem; flex-shrink: 0; }
 .qi-label { font-size: 0.92rem; font-weight: 700; color: #fff; margin-bottom: 2px; }
-.qi-sub   { font-size: 0.78rem; color: #888; }
+.qi-sub   { font-size: 0.78rem; color: #b0b0b0; }
 .qi-link  { color: #C0392B; text-decoration: none; font-weight: 600; }
 .qi-link:hover { color: #e84040; }
 .quick-info-meta {
@@ -124,10 +124,10 @@ h1, h2, h3, .pricing-badge {
   flex-wrap: wrap;
   gap: 8px;
   font-size: 0.82rem;
-  color: #666;
+  color: #999;
   justify-content: center;
 }
-.qi-divider { color: #333; }
+.qi-divider { color: #666; }
 @media (max-width: 768px) {
   .quick-info-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1271,7 +1271,7 @@ td.empty-cell {
   display: block;
   font-family: 'Inter', sans-serif;
   font-size: 0.72rem;
-  color: #555;
+  color: #999;
   font-weight: 400;
   letter-spacing: 0;
   margin-top: 3px;
@@ -1279,7 +1279,7 @@ td.empty-cell {
 }
 .sched-info { flex: 1; min-width: 0; }
 .sched-name { font-size: 1rem; font-weight: 600; color: #eee; }
-.sched-meta { font-size: 0.82rem; color: #666; margin-top: 3px; }
+.sched-meta { font-size: 0.82rem; color: #aaa; margin-top: 3px; }
 
 /* Day tabs spacing */
 .schedule-day-tabs { margin-bottom: 24px; }
