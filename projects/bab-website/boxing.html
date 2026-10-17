@@ -81,6 +81,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css?v=4" />
+  <style>
+    /* Keyboard accessibility enhancements for this page. */
+    .a11y-skip-link {
+      position: fixed; top: 0; left: 12px; z-index: 100000;
+      padding: 12px 18px; background: #fff; color: #111;
+      font: 700 1rem/1.5 Arial, sans-serif; text-decoration: underline;
+      transform: translateY(-150%);
+    }
+    .a11y-skip-link:focus { transform: translateY(0); }
+    :focus-visible { outline: 3px solid #ffdc6e; outline-offset: 3px; }
+    #main-content:focus { outline: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html:focus-within { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-S476D3DJPE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -90,10 +110,11 @@
   </script>
 </head>
 <body>
+  <a class="a11y-skip-link" href="#main-content">Skip to main content</a>
 
-  <nav id="nav">
+  <nav id="nav" aria-label="Main navigation">
     <div class="nav-inner">
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
       <a href="/" class="nav-logo">
@@ -112,7 +133,8 @@
       <li><a href="/free-class.html">Free Class</a></li>
     </ul>
   </nav>
-  <div class="nav-backdrop" id="nav-backdrop"></div>
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+  <main id="main-content" tabindex="-1">
 
   <section id="hero" class="hero" style="background: url('img/boxing-hero.jpg') center center / cover no-repeat;">
     <div class="hero-overlay"></div>
@@ -411,6 +433,7 @@
     </div>
   </section>
 
+  </main>
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-top">
@@ -442,15 +465,23 @@
       navLinks.classList.remove('open');
       navBackdrop.classList.remove('open');
       hamburger.classList.remove('active');
-      hamburger.setAttribute('aria-expanded', false);
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open navigation menu');
     }
     hamburger.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('open');
       navBackdrop.classList.toggle('open', isOpen);
-      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+      hamburger.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
       hamburger.classList.toggle('active', isOpen);
     });
     navBackdrop.addEventListener('click', closeNav);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+        closeNav();
+        hamburger.focus();
+      }
+    });
     navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', closeNav); });
   </script>
 
